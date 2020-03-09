@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto';
+    line-height: 1.5;
+}
+
+html, body, main, div.app{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    box-shadow: 2px 0px 6px rgba(0, 0, 0, .5);
+    padding: 6.5rem 1rem;
+}
+
+div.main h1{
+    margin-bottom: 1.8rem;
+    color: #1a1a1a;
+}
+
+div.main h1, div.main h3{
+    text-align: center;
+} 
+
+div.about{
+    max-width: 1024px;
+    margin-bottom: 1.25rem;
+    padding: 2rem;
+}
+
+p.topic{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: .25rem;
+    font-weight: 600;
+    color: #e7002a;
+}
+
+p.explic{
+    font-size: 115%;
+    padding-top: .75rem;
+}
+
+li.subli{
+    margin-left: 1.5rem;
+    list-style: circle;
+}
+
+
+li.baseli{
+    font-weight: 600;
+    margin-top: .75rem;
+}
+
+a{
+    color: #e7002a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+img.imgc{
+    margin-left: 10%;
+    width: 80%;
+}
