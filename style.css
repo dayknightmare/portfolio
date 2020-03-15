@@ -81,3 +81,26 @@ img.imgc{
     margin-left: 10%;
     width: 80%;
 }
+
+div.accords{
+    display: flex;
+    flex-direction: column;
+}
+
+div.accordItem{
+    display: none;
+}
+
+div.accordItem.active{
+    display: block;
+}
+
+button.accord{
+    background: none;
+    border: none;
+    padding: .5rem;
+    border-bottom: 1px solid #e7002a;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: .5rem;
+}

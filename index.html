@@ -26,67 +26,94 @@
                     O que eu sei
                 </p>
                 <p class="explic">
-                    <ul>
-                        <li class="baseli">
-                            Python
-                            <li class="subli">
-                                Está é a linguagem que eu mais conheço e gosto de trabalhar estudo-a desde de Agosto de 2017 com enfase na parte web mais especificamente com Django e WebSockets.
-                            </li>
-                        </li>
-                        <li class="baseli">
-                            JavaScript
-                            <li class="subli">
-                                Outra linguagem que gosto muito, e venho me aperfeiçoando a cada dia. Começei a estudar-la em 2017 também para gerencia do DOM (Document object model), e evitar recarregamentos desnecessários da página.
-                            </li>
-                        </li>
-                        <li class="baseli">
-                            Flutter
-                            <li class="subli">
-                                Desde Março de 2019 quando eu conheci o Flutter, este framework se tornou o meu favorito para criação e desenvolvimento de app para Ios e Android, hoje consigo fazer a gerencia dos estados (States) por meio do Mobx (Pacote do Flutter), que facilita a manipulação dos widgets sem redesenhar ta tela.
-                                
-                            </li>
-                        </li>
-                        <li class="baseli">
-                            Sass/SCSS
-                            <li class="subli">
-                                Não que não goste do CSS, mas com o SCSS fica estramamente mais compacto os estilos que serão renderizados pelo navegador.
-                            </li>
-                        </li>
-                        <li class="baseli">
-                            Linux
-                            <li class="subli">
-                                Manjaro e Ubuntu são as minhas distros preferidas. Mas gosto de todas sem exceção.
-                            </li>
-                        </li>
-                        <li class="baseli">
-                            CSS
-                        </li>
-                        <li class="baseli">
-                            Vue
-                            <li class="subli">
-                                Este é o framework front-end que eu mais utilizo em meus projeto, por causa da sua simplicidade e performance.
-                            </li>
-                        </li>
-                        <li class="baseli">
-                            React
-                            <li class="subli">
-                                Ainda sum muito avançado, porem sou capaz de criar e desenvolver projetos em react sem problema algum.
-                            </li>
-                        </li>
-                        <li class="baseli">NodeJs</li>
-                        <li class="baseli">CassandraDB</li>
-                        <li class="baseli">PWA</li>
-                        <li class="baseli">ExpressJS</li>
-                        <li class="baseli">PHP</li>
-                        <li class="baseli">MongoDB</li>
-                        <li class="baseli">MySQL</li>
-                        <li class="baseli">SQLite</li>
-                        <li class="baseli">Android Studio</li>
-                        <li class="baseli">C/C++</li>
-                        <li class="baseli">Anduino (C++)</li>
-                        <li class="baseli">Illustrator</li>
-                        <li class="baseli">Figma</li>
-                    </ul>
+                    <div class="accords">
+                        <button @click="openAccord('ac-l')" class="accord">Linguagens</button>
+                        <div class="accordItem" id="ac-l">
+                            <ul>
+                                <li class="baseli">
+                                    Python
+                                    <li class="subli">
+                                        Está é a linguagem que eu mais conheço e gosto de trabalhar estudo-a desde de Agosto de 2016 com enfase na parte web mais especificamente com Django e WebSockets.
+                                    </li>
+                                </li>
+                                <li class="baseli">
+                                    JavaScript
+                                    <li class="subli">
+                                        Outra linguagem que gosto muito, e venho me aperfeiçoando a cada dia. Começei a estudar-la em 2017 também para gerencia do DOM (Document object model), e evitar recarregamentos desnecessários da página.
+                                    </li>
+                                </li>
+                                <li class="baseli">
+                                    Sass/SCSS
+                                    <li class="subli">
+                                        Não que não goste do CSS, mas com o SCSS fica estramamente mais compacto os estilos que serão renderizados pelo navegador.
+                                    </li>
+                                </li>
+                                <li class="baseli">
+                                    CSS
+                                </li>
+                                <li class="baseli">NodeJs</li>
+                                <li class="baseli">PHP</li>
+                                <li class="baseli">C/C++</li>
+                                <li class="baseli">Anduino (C++)</li>
+
+                            </ul>
+                        </div>
+                        <button @click="openAccord('ac-f')" class="accord">Frameworks</button>
+                        <div class="accordItem" id="ac-f">
+                            <ul>
+                                <li class="baseli">
+                                    Flutter
+                                    <li class="subli">
+                                        Desde Março de 2019 quando eu conheci o Flutter, este framework se tornou o meu favorito para criação e desenvolvimento de app para Ios e Android, hoje consigo fazer a gerencia dos estados (States) por meio do Mobx (Pacote do Flutter), que facilita a manipulação dos widgets sem redesenhar ta tela.
+                                        
+                                    </li>
+                                </li>
+                                <li class="baseli">
+                                    Vue
+                                    <li class="subli">
+                                        Este é o framework front-end que eu mais utilizo em meus projeto, por causa da sua simplicidade e performance.
+                                    </li>
+                                </li>
+                                <li class="baseli">
+                                    React
+                                    <li class="subli">
+                                        Ainda não sou muito avançado, porem sou capaz de criar e desenvolver projetos em react sem problema algum.
+                                    </li>
+                                </li>
+                                <li class="baseli">ExpressJS</li>
+
+                            </ul>
+                        </div>
+                        <button @click="openAccord('ac-t')" class="accord">Ferramentas</button>
+                        <div class="accordItem" id="ac-t">
+                            <ul>
+                                <li class="baseli">Android Studio</li>
+                                <li class="baseli">Illustrator</li>
+                                <li class="baseli">Figma</li>
+                            </ul>
+                        </div>
+                        <button @click="openAccord('ac-b')" class="accord">Bancos</button>
+                        <div class="accordItem" id="ac-b">
+                            <ul>
+                                <li class="baseli">CassandraDB</li>
+                                <li class="baseli">MySQL</li>
+                                <li class="baseli">SQLite</li>
+                                <li class="baseli">MongoDB</li>
+                            </ul>
+                        </div>
+                        <button @click="openAccord('ac-o')" class="accord">Outros</button>
+                        <div class="accordItem" id="ac-o">
+                            <ul>
+                                <li class="baseli">
+                                    Linux
+                                    <li class="subli">
+                                        Manjaro e Ubuntu são as minhas distros preferidas. Mas gosto de todas sem exceção.
+                                    </li>
+                                </li>
+                                <li class="baseli">PWA</li>
+                            </ul>
+                        </div>
+                    </div>
                 </p>
                 <p class="topic">
                     Projetos
@@ -107,5 +134,7 @@
             </div>
         </main>
     </div>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
