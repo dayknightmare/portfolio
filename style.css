@@ -27,9 +27,13 @@ div.main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50%;
+    height: 100%;
     box-shadow: 2px 0px 6px rgba(0, 0, 0, .5);
-    padding: 6.5rem 1rem;
+    padding: 11rem 1rem;
+    background-image: url(./imgs/back.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 div.main h1{
