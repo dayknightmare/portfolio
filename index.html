@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons.css">
     <title>Miguel Vieira Colombo | Portfólio</title>
 </head>
 <body>
@@ -17,17 +18,17 @@
             </div>
             <div class="about">
                 <p class="topic">
-                    Quem sou eu
+                    <i class=" icon-book-open"></i>&nbsp;&nbsp;Quem sou eu
                 </p>
                 <p class="explic">
                     Meu nome é Miguel atualmente eu sou um bacharelando em Ciência da computação (BCC) no <a href="https://univem.edu.br/">UNIVEM</a>, além disso, sou um desenvolvedor de site e aplicativos, com o objetivo de tornar a tecnologia e seus feitos cada vez mais acessíveis e interativos, de uma modo simples, rápido e prático. Afinal de contas e tecnologia tem como objetivo facilitar e inovar os meios em que pessoas possam obter o que elas desejam. 
                 </p>
                 <p class="topic">
-                    O que eu sei
+                    <i class="icon-box"></i>&nbsp;&nbsp;O que eu sei
                 </p>
                 <p class="explic">
                     <div class="accords">
-                        <button @click="openAccord('ac-l')" class="accord">Linguagens</button>
+                        <button @click="openAccord('ac-l')" class="accord">Linguagens <i class="icon-chevron-down"></i></button>
                         <div class="accordItem" id="ac-l">
                             <ul>
                                 <li class="baseli">
@@ -58,7 +59,7 @@
 
                             </ul>
                         </div>
-                        <button @click="openAccord('ac-f')" class="accord">Frameworks</button>
+                        <button @click="openAccord('ac-f')" class="accord">Frameworks <i class="icon-chevron-down"></i></button>
                         <div class="accordItem" id="ac-f">
                             <ul>
                                 <li class="baseli">
@@ -84,7 +85,7 @@
 
                             </ul>
                         </div>
-                        <button @click="openAccord('ac-t')" class="accord">Ferramentas</button>
+                        <button @click="openAccord('ac-t')" class="accord">Ferramentas <i class="icon-chevron-down"></i></button>
                         <div class="accordItem" id="ac-t">
                             <ul>
                                 <li class="baseli">Terminal (Linux)</li>
@@ -94,7 +95,7 @@
                                 <li class="baseli">Figma</li>
                             </ul>
                         </div>
-                        <button @click="openAccord('ac-b')" class="accord">Bancos</button>
+                        <button @click="openAccord('ac-b')" class="accord">Bancos <i class="icon-chevron-down"></i></button>
                         <div class="accordItem" id="ac-b">
                             <ul>
                                 <li class="baseli">CassandraDB</li>
@@ -103,7 +104,7 @@
                                 <li class="baseli">MongoDB</li>
                             </ul>
                         </div>
-                        <button @click="openAccord('ac-o')" class="accord">Outros</button>
+                        <button @click="openAccord('ac-o')" class="accord">Outros <i class="icon-chevron-down"></i></button>
                         <div class="accordItem" id="ac-o">
                             <ul>
                                 <li class="baseli">
@@ -118,7 +119,7 @@
                     </div>
                 </p>
                 <p class="topic">
-                    Projetos
+                    <i class="icon-activity"></i>&nbsp;&nbsp;Projetos
                 </p>
                 <p class="explic">
                     Atualmente maior parte dos meus projetos são privados, entretanto posso-lhe mostrar um projeto online de rede social desenvolvida em Python com Django, Flutter, SCSS e Vue Vupy, essa rede social foi projetada e desenvolvida durante 2019 como um trabalho de TCC (trabalho de conclusão de curso) da ETEC Antonio Devisate adjunto de outras duas pessoas
@@ -128,10 +129,25 @@
                 </p>
                 <img src="imgs/vupy.png" class="imgc">
                 <p class="explic">
-                    Um dos meus últimos projetos foi a <a href="https://axiscomunicacao.netlify.com/">Axis</a> um site para uma futura empresa que prestará serviços de marketing digital, SEO, Social mídia e entre outras coisas
+                    Um dos meus últimos projetos foi a <a href="http://axismarketing.com.br/">Axis</a> um site para uma futura empresa que prestará serviços de marketing digital, SEO, Social mídia e entre outras coisas
                 </p>
+                <img src="imgs/axis.png" class="imgc">
+
                 <p class="explic">
                     Além desse projeto lhe convido à visitar meu <a href="https://github.com/dayknightmare">Github</a> e conhecer mais alguns dos meus projetos que estão em público.
+                </p>
+
+                <p class="topic">
+                    <i class="icon-user"></i>&nbsp;&nbsp;Contatos
+                </p>
+                <p class="explic">
+                    <a class="underDark" href="https://www.linkedin.com/in/miguel-vieira-c-7a1534189/"><i class="icon-linkedin"></i>&nbsp;&nbsp;Linkedin</a>
+                </p>
+                <p class="explic">
+                    <a class="underDark" href="https://twitter.com/Miguel11359760"><i class="icon-twitter"></i>&nbsp;&nbsp;Twitter</a>
+                </p>
+                <p class="explic">
+                    <a class="underDark" href="https://github.com/dayknightmare"><i class="icon-github"></i>&nbsp;&nbsp;GitHub</a>
                 </p>
             </div>
         </main>
