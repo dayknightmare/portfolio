@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'vupyFont';
-  src:  url('/fonts/vupyFont.eot?y9eq0u');
-  src:  url('/fonts/vupyFont.eot?y9eq0u#iefix') format('embedded-opentype'),
-    url('/fonts/vupyFont.ttf?y9eq0u') format('truetype'),
-    url('/fonts/vupyFont.woff?y9eq0u') format('woff'),
-    url('/fonts/vupyFont.svg?y9eq0u#vupyFont') format('svg');
+  src:  url('/vupyFont.eot?y9eq0u');
+  src:  url('/vupyFont.eot?y9eq0u#iefix') format('embedded-opentype'),
+    url('/vupyFont.ttf?y9eq0u') format('truetype'),
+    url('/vupyFont.woff?y9eq0u') format('woff'),
+    url('/vupyFont.svg?y9eq0u#vupyFont') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
