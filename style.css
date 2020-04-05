@@ -134,6 +134,35 @@ button.accord{
     justify-content: space-between;
 }
 
+div.workflow{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.75rem;
+}
+
+div.workflow p a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #1f1f1f;
+    transition: .3s ease-in-out;
+}
+
+div.workflow p a:hover{
+    color: #e7002a;
+}
+
+
+div.workflow p a i {
+    font-size: 3rem;
+    margin-bottom: .75rem;
+}
+
 @keyframes showHeight {
     from {
         opacity: 0
