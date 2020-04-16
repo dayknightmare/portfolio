@@ -148,7 +148,7 @@ div.menuhero ul li {
 
 div.menuhero ul li.active{
     color: #e7002a;
-    box-shadow: inset 0 -3px 0 0 #e7002a;
+    box-shadow: inset 0 -3.5px 0 -1px #e7002a;
 }
 
 div.accordItem{
@@ -232,5 +232,11 @@ div.workflow p a i {
 
     to{
         opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    div.menuhero ul li span{
+        display: none;
     }
 }

@@ -52,7 +52,7 @@ const app = new Vue({
             else if (window.pageYOffset < projects.offsetTop - 150){
                 this.active = "iknow"
             }
-            else if (window.pageYOffset < moshi.offsetTop - 150){
+            else if (window.pageYOffset < moshi.offsetTop - 650){
                 this.active = "projects"
             }
             else{
