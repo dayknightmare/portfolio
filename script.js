@@ -1,7 +1,12 @@
 const app = new Vue({
     el: '.app',
     data: {
-        accord: ''
+        accord: '',
+        active: ''
+    },
+
+    created() {
+        window.addEventListener("scroll", this.changeSelectedItem)
     },
 
     methods: {
@@ -34,6 +39,32 @@ const app = new Vue({
             else{
                 this.accord = ''
             }
+        },
+
+        changeSelectedItem(e){
+            let iknow = document.querySelector("#iknow");            
+            let projects = document.querySelector("#projects");            
+            let moshi = document.querySelector("#moshi");            
+
+            if (window.pageYOffset < iknow.offsetTop - 150){
+                this.active = "orewa"
+            }
+            else if (window.pageYOffset < projects.offsetTop - 150){
+                this.active = "iknow"
+            }
+            else if (window.pageYOffset < moshi.offsetTop - 150){
+                this.active = "projects"
+            }
+            else{
+                this.active = "moshi"
+            }
+        },
+
+        smoothDirection(id){
+            
+            let p = document.querySelector(`#${id}`).offsetTop
+            window.scrollTo(0, p - 75);
+            
         }
     }
 })

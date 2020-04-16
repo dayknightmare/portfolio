@@ -18,14 +18,22 @@
                     Conheça me, veja o que posso lhe proporcionar como desenvolvedor e como pessoa.
                 </h3>
             </div>
+            <div class="menuhero">
+                <ul>
+                    <li :class="{'active': active == 'orewa'}" @click="smoothDirection('orewa')">Quem sou eu</li>
+                    <li :class="{'active': active == 'iknow'}" @click="smoothDirection('iknow')">O que eu sei</li>
+                    <li :class="{'active': active == 'projects'}" @click="smoothDirection('projects')">Projetos</li>
+                    <li :class="{'active': active == 'moshi'}" @click="smoothDirection('moshi')">Contatos</li>
+                </ul>
+            </div>
             <div class="about">
-                <p class="topic">
+                <p class="topic" id="orewa">
                     <i class="fas fa-address-book"></i>&nbsp;&nbsp;Quem sou eu
                 </p>
                 <p class="explic">
                     Meu nome é Miguel atualmente eu sou um bacharelando em Ciência da computação (BCC) no <a href="https://univem.edu.br/">UNIVEM</a>, além disso, sou um desenvolvedor de site e aplicativos, com o objetivo de tornar a tecnologia e seus feitos cada vez mais acessíveis e interativos, de uma modo simples, rápido e prático. Afinal de contas e tecnologia tem como objetivo facilitar e inovar os meios em que pessoas possam obter o que elas desejam. 
                 </p>
-                <p class="topic">
+                <p class="topic" id="iknow">
                     <i class="fas fa-book-reader"></i>&nbsp;&nbsp;O que eu sei
                 </p>
                 <p class="explic">
@@ -120,7 +128,7 @@
                         </div>
                     </div>
                 </p>
-                <p class="topic">
+                <p class="topic" id="projects">
                     <i class="fas fa-tasks"></i>&nbsp;&nbsp;Projetos
                 </p>
                 <p class="explic">
@@ -129,31 +137,35 @@
                 <p class="explic">
                     Este mesmo projeto a Vupy foi refeita sendo chamada de <a href="https://twitter.com/SocialVupy">VSN</a> (Vupy Social Networking). Este projeto ainda não está online, porém é possível vê-lo pelo <a href="https://twitter.com">Twitter</a> 
                 </p>
+                <br>
                 <img src="imgs/vupy.png" class="imgc">
+                <br> 
                 <p class="explic">
                     Um dos meus últimos projetos foi a <a href="http://axismarketing.com.br/">Axis</a> um site para uma futura empresa que prestará serviços de marketing digital, SEO, Social mídia e entre outras coisas
                 </p>
+                <br>
                 <img src="imgs/axis.png" class="imgc">
+                <br>
 
                 <p class="explic">
                     Além desse projeto lhe convido à visitar meu <a href="https://github.com/dayknightmare">Github</a> e conhecer mais alguns dos meus projetos que estão em público.
                 </p>
 
 
-                <p class="topic">
+                <p class="topic" id="moshi">
                     <i class="fas fa-address-card"></i>&nbsp;&nbsp;Contatos
                 </p>
 
                 <div class="workflow">
                     
                     <p class="explic">
-                        <a class="" href="https://www.linkedin.com/in/miguel-vieira-c-7a1534189/"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;Linkedin</a>
+                        <a target="_blank" class="" href="https://www.linkedin.com/in/miguel-vieira-c-7a1534189/"><i class="fab fa-linkedin"></i>Linkedin</a>
                     </p>
                     <p class="explic">
-                        <a class="" href="https://twitter.com/Miguel11359760"><i class="fab fa-twitter"></i>&nbsp;&nbsp;Twitter</a>
+                        <a target="_blank" class="" href="https://twitter.com/Miguel11359760"><i class="fab fa-twitter"></i>Twitter</a>
                     </p>
                     <p class="explic">
-                        <a class="" href="https://github.com/dayknightmare"><i class="fab fa-github"></i>&nbsp;&nbsp;GitHub</a>
+                        <a target="_blank" class="" href="https://github.com/dayknightmare"><i class="fab fa-github"></i>GitHub</a>
                     </p>
                 </div>
             </div>

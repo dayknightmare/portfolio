@@ -1,24 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: 'Roboto';
-    line-height: 1.5;
+    font-family: 'Montserrat';
+    line-height: 1.55;
 }
 
 html, body, main, div.app{
     width: 100%;
     height: 100%;
     background-color: #ffffff;
+    scroll-behavior: smooth;
 }
 
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
+    min-height: 100%;
 }
 
 div.main{
@@ -53,15 +56,19 @@ div.about{
 
 p.topic{
     font-size: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: .25rem;
     font-weight: 900;
+    color: #1b1b1b;
+}
+
+p.topic i {
     color: #e7002a;
 }
 
 p.explic{
-    font-size: 115%;
-    padding-top: .75rem;
+    font-size: 120%;
+    padding-top: 1.5rem;
 }
 
 li.subli{
@@ -82,8 +89,6 @@ a{
     font-weight: 600;
 }
 
-
-
 a.underDark{
     text-decoration: underline;
     text-decoration-color: #e7002a;
@@ -93,6 +98,8 @@ a.underDark{
 img.imgc{
     margin-left: 10%;
     width: 80%;
+    box-shadow: 0 0 15px -5px rgba(0, 0, 0, .5);
+    border-radius: 6px;
 }
 
 div.accords{
@@ -100,16 +107,60 @@ div.accords{
     flex-direction: column;
 }
 
+div.menuhero{
+    width: 100%;
+    line-height: 4rem;
+    background-color: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(20px) saturate(180%);
+    position: sticky;
+    top: 0;
+}
+
+div.menuhero::after{
+    content: '';
+    width: 100%;
+    display: block;
+    bottom: 0;
+    height: 1px;
+    background: rgba(0, 0, 0, .15);
+}
+
+div.menuhero ul {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.menuhero ul li {
+    flex-grow: 1;
+    list-style: none;
+    font-size: 115%;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    height: 100%;
+    line-height: 4rem;
+    text-align: center;
+}
+
+div.menuhero ul li.active{
+    color: #e7002a;
+    box-shadow: inset 0 -3px 0 0 #e7002a;
+}
+
 div.accordItem{
-    display: none;
-    opacity: 0;
+    display: block;
     overflow: hidden;
     transition: 0.3S ease-in-out;
+    max-height: 0;
+    padding-left: 2rem;
 }
 
 div.accordItem.active{
-    display: block;
-    opacity: 1;
+    max-height: 30rem;
 }
 
 div.accordItem.indel{
