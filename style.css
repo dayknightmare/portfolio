@@ -160,7 +160,7 @@ div.accordItem{
 }
 
 div.accordItem.active{
-    max-height: 30rem;
+    max-height: 1000rem;
 }
 
 div.accordItem.indel{
