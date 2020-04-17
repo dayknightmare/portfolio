@@ -38,7 +38,7 @@
                 </p>
                 <p class="explic">
                     <div class="accords">
-                        <button @click="openAccord('ac-l')" class="accord">Linguagens <i class="fas fa-chevron-down"></i></button>
+                        <button @click="openAccord('ac-l')" class="accord">Linguagens <i :class="{'fas fa-chevron-up': accord == 'ac-l', 'fas fa-chevron-down': accord != 'ac-l'}"></i></button>
                         <div class="accordItem" id="ac-l">
                             <ul>
                                 <li class="baseli">
@@ -69,9 +69,15 @@
 
                             </ul>
                         </div>
-                        <button @click="openAccord('ac-f')" class="accord">Frameworks <i class="fas fa-chevron-down"></i></button>
+                        <button @click="openAccord('ac-f')" class="accord">Frameworks <i :class="{'fas fa-chevron-up': accord == 'ac-f', 'fas fa-chevron-down': accord != 'ac-f'}"></i></button>
                         <div class="accordItem" id="ac-f">
                             <ul>
+                                <li class="baseli">
+                                    Django
+                                    <li class="subli">
+                                        Este é disparadamente framework que mais gosto, a versatilidade e simplicidade do código escrito nele torna-o simples e fácil de se entender, além de que é possível fazer muito com pouca linhas de código graças ao reaproveitamento que esse proporciona. Fora que a rapidez e praticidade de configuração e instalação do Django é surreal além de que ainda é possivel automatizar este processo e demias processos.                                        
+                                    </li>
+                                </li>
                                 <li class="baseli">
                                     Flutter
                                     <li class="subli">
@@ -95,7 +101,7 @@
 
                             </ul>
                         </div>
-                        <button @click="openAccord('ac-t')" class="accord">Ferramentas <i class="fas fa-chevron-down"></i></button>
+                        <button @click="openAccord('ac-t')" class="accord">Ferramentas <i :class="{'fas fa-chevron-up': accord == 'ac-t', 'fas fa-chevron-down': accord != 'ac-t'}"></i></button>
                         <div class="accordItem" id="ac-t">
                             <ul>
                                 <li class="baseli">Terminal (Linux)</li>
@@ -105,7 +111,7 @@
                                 <li class="baseli">Figma</li>
                             </ul>
                         </div>
-                        <button @click="openAccord('ac-b')" class="accord">Bancos <i class="fas fa-chevron-down"></i></button>
+                        <button @click="openAccord('ac-b')" class="accord">Bancos <i :class="{'fas fa-chevron-up': accord == 'ac-b', 'fas fa-chevron-down': accord != 'ac-b'}"></i></button>
                         <div class="accordItem" id="ac-b">
                             <ul>
                                 <li class="baseli">CassandraDB</li>
@@ -114,7 +120,7 @@
                                 <li class="baseli">MongoDB</li>
                             </ul>
                         </div>
-                        <button @click="openAccord('ac-o')" class="accord">Outros <i class="fas fa-chevron-down"></i></button>
+                        <button @click="openAccord('ac-o')" class="accord">Outros <i :class="{'fas fa-chevron-up': accord == 'ac-o', 'fas fa-chevron-down': accord != 'ac-o'}"></i></button>
                         <div class="accordItem" id="ac-o">
                             <ul>
                                 <li class="baseli">

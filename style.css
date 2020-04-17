@@ -69,6 +69,7 @@ p.topic i {
 p.explic{
     font-size: 120%;
     padding-top: 1.5rem;
+    text-align: justify;
 }
 
 li.subli{
@@ -96,10 +97,10 @@ a.underDark{
 }
 
 img.imgc{
-    margin-left: 10%;
-    width: 80%;
+    margin-left: 7.5%;
+    width: 85%;
     box-shadow: 0 0 15px -5px rgba(0, 0, 0, .5);
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
 div.accords{
@@ -154,23 +155,24 @@ div.menuhero ul li.active{
 div.accordItem{
     display: block;
     overflow: hidden;
-    transition: 0.3S ease-in-out;
+    transition: .3S ease-in-out;
     max-height: 0;
     padding-left: 2rem;
+    
 }
 
 div.accordItem.active{
     max-height: 1000rem;
-}
+    }
 
-div.accordItem.indel{
-    display: block;
-    opacity: 0;
-}
+    div.accordItem.indel{
+        display: block;
+        opacity: 0;
+    }
 
-div.accordItem.inopen{
-    display: block;
-}
+    div.accordItem.inopen{
+        display: block;
+    }
 
 button.accord{
     background: none;
