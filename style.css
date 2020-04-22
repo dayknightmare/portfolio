@@ -7,6 +7,8 @@
     outline: none;
     font-family: 'Montserrat';
     line-height: 1.55;
+    scrollbar-width: thin;
+    scrollbar-color: #e7002a;
 }
 
 html, body, main, div.app{
@@ -14,6 +16,16 @@ html, body, main, div.app{
     height: 100%;
     background-color: #ffffff;
     scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar{
+    background-color: #ddd;
+    width: .3rem;
+    height: .4rem;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #e7002a;
 }
 
 main{
@@ -96,11 +108,15 @@ a.underDark{
     color: #000;
 }
 
-img.imgc{
+img.imgc, img.imgs{
     margin-left: 7.5%;
     width: 85%;
     box-shadow: 0 0 15px -5px rgba(0, 0, 0, .5);
     border-radius: 8px;
+}
+
+img.imgs{
+    min-width: 85%;
 }
 
 div.accords{
@@ -214,6 +230,16 @@ div.workflow p a:hover{
 div.workflow p a i {
     font-size: 3rem;
     margin-bottom: .75rem;
+}
+
+div.slide{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+    padding: .5rem;
+    scrollbar-color: #e7002a;
+    scrollbar-width: thin;
 }
 
 @keyframes showHeight {
