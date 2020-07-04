@@ -131,6 +131,7 @@ div.menuhero{
     backdrop-filter: blur(20px) saturate(180%);
     position: sticky;
     top: 0;
+    z-index: 100
 }
 
 div.menuhero::after{
@@ -171,37 +172,50 @@ div.menuhero ul li.active{
 div.accordItem{
     display: block;
     overflow: hidden;
-    transition: .3S ease-in-out;
+    transition: .6S ease-in-out;
     max-height: 0;
     padding-left: 2rem;
-    
 }
 
 div.accordItem.active{
     max-height: 1000rem;
-    }
+}
 
-    div.accordItem.indel{
-        display: block;
-        opacity: 0;
-    }
+div.accordItem.indel{
+    display: block;
+    opacity: 0;
+}
 
-    div.accordItem.inopen{
-        display: block;
-    }
+div.accordItem.inopen{
+    display: block;
+}
+
+button.accord i{
+    line-height: 1.5 !important;
+}
 
 button.accord{
     background: none;
-    border: none;
+    border: 2px solid transparent;
     padding: .5rem 1rem;
-    border-bottom: 1px solid #e7002a;
     font-size: 1.25rem;
     font-weight: 600;
-    border-radius: .5rem;
     display: flex;
     flex-direction: row;
+    position: relative;
     justify-content: space-between;
+    background: #FFFDFF;
+    border-left: 2px solid #e7002a;
+    transition: 0.3s ease-in-out;
 }
+
+button.accord.halfboard{
+    border: 2px solid #e7002a;
+    animation: 1s halfboard;
+    border-radius: .5rem;
+    margin-top: .25rem;
+}
+
 
 div.workflow{
     width: 100%;
@@ -242,6 +256,74 @@ div.slide{
     scrollbar-width: thin;
 }
 
+div.hopeproject{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: .5rem 0;
+    position: relative;
+    opacity: 0;
+    padding-bottom: 1rem;
+    transition: .5s ease;
+    top: 5rem;
+}
+
+div.hopeproject.view{
+    opacity: 1;
+    top: 0;
+}
+
+div.hopeproject::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #efefef;
+    display: block;
+    position: absolute;
+    bottom: -1rem;
+}
+
+
+div.hopeproject img.tophigh{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    background: white;
+    padding: .25rem;
+    box-shadow: 1px 1px 5px -1px rgba(0,0,0,.2);
+    margin-right: .5rem;
+}
+
+div.hopeproject p.explic{
+    padding-top: 0;
+}
+
+@keyframes halfboard{
+    0%{
+        border: 2px solid transparent;
+        border-left: 2px solid #e7002a;
+        border-radius: 0;
+    }
+
+    25%{
+        border: 2px solid transparent;
+        border-left: 2px solid #e7002a;
+        border-bottom: 2px solid #e7002a;
+    }
+
+    50%{
+        border: 2px solid transparent;
+        border-left: 2px solid #e7002a;
+        border-bottom: 2px solid #e7002a;
+        border-right: 2px solid #e7002a;
+    }
+
+    75%{
+        border: 2px solid #e7002a;
+        border-radius: .5rem;
+    }
+}
+
 @keyframes showHeight {
     from {
         opacity: 0
@@ -266,5 +348,19 @@ div.slide{
 @media only screen and (max-width: 768px){
     div.menuhero ul li span{
         display: none;
+    }
+}
+
+@media only screen and (max-width: 669px){
+    div.hopeproject{
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.hopeproject img.tophigh{
+        width: 5rem !important;
+        height: 5rem !important;
+        margin-bottom: .5rem;
     }
 }

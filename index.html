@@ -31,14 +31,15 @@
                     <i class="fas fa-address-book"></i>&nbsp;&nbsp;Quem sou eu
                 </p>
                 <p class="explic">
-                    Meu nome é Miguel atualmente eu sou um bacharelando em Ciência da computação (BCC) no <a href="https://univem.edu.br/">UNIVEM</a>, além disso, sou um desenvolvedor de site e aplicativos, com o objetivo de tornar a tecnologia e seus feitos cada vez mais acessíveis e interativos, de uma modo simples, rápido e prático. Afinal de contas e tecnologia tem como objetivo facilitar e inovar os meios em que pessoas possam obter o que elas desejam. 
+                    Meu nome é Miguel atualmente sou um bacharelando em Ciência da computação (BCC) no <a href="https://univem.edu.br/">UNIVEM</a>, além disso, sou um desenvolvedor de site e aplicativos, com o objetivo de tornar a tecnologia e seus feitos cada vez mais acessíveis e interativos, de uma modo simples, rápido e prático. 
                 </p>
+                <br>
                 <p class="topic" id="iknow">
                     <i class="fas fa-book-reader"></i>&nbsp;&nbsp;O que eu sei
                 </p>
                 <p class="explic">
                     <div class="accords">
-                        <button @click="openAccord('ac-l')" class="accord">Linguagens <i :class="{'fas fa-chevron-up': accord == 'ac-l', 'fas fa-chevron-down': accord != 'ac-l'}"></i></button>
+                        <button id="ac-l-b" @click="openAccord('ac-l')" class="accord">Linguagens <i :class="{'fas fa-chevron-up': accord == 'ac-l', 'fas fa-chevron-down': accord != 'ac-l'}"></i></button>
                         <div class="accordItem" id="ac-l">
                             <ul>
                                 <li class="baseli">
@@ -65,11 +66,10 @@
                                 <li class="baseli">NodeJs</li>
                                 <li class="baseli">PHP</li>
                                 <li class="baseli">C/C++</li>
-                                <li class="baseli">Anduino (C++)</li>
 
                             </ul>
                         </div>
-                        <button @click="openAccord('ac-f')" class="accord">Frameworks <i :class="{'fas fa-chevron-up': accord == 'ac-f', 'fas fa-chevron-down': accord != 'ac-f'}"></i></button>
+                        <button id="ac-f-b" @click="openAccord('ac-f')" class="accord">Frameworks <i :class="{'fas fa-chevron-up': accord == 'ac-f', 'fas fa-chevron-down': accord != 'ac-f'}"></i></button>
                         <div class="accordItem" id="ac-f">
                             <ul>
                                 <li class="baseli">
@@ -101,7 +101,7 @@
 
                             </ul>
                         </div>
-                        <button @click="openAccord('ac-t')" class="accord">Ferramentas <i :class="{'fas fa-chevron-up': accord == 'ac-t', 'fas fa-chevron-down': accord != 'ac-t'}"></i></button>
+                        <button id="ac-t-b" @click="openAccord('ac-t')" class="accord">Ferramentas <i :class="{'fas fa-chevron-up': accord == 'ac-t', 'fas fa-chevron-down': accord != 'ac-t'}"></i></button>
                         <div class="accordItem" id="ac-t">
                             <ul>
                                 <li class="baseli">Terminal (Linux)</li>
@@ -111,16 +111,16 @@
                                 <li class="baseli">Figma</li>
                             </ul>
                         </div>
-                        <button @click="openAccord('ac-b')" class="accord">Bancos <i :class="{'fas fa-chevron-up': accord == 'ac-b', 'fas fa-chevron-down': accord != 'ac-b'}"></i></button>
+                        <button id="ac-b-b" @click="openAccord('ac-b')" class="accord">Bancos de dado<i :class="{'fas fa-chevron-up': accord == 'ac-b', 'fas fa-chevron-down': accord != 'ac-b'}"></i></button>
+                        
                         <div class="accordItem" id="ac-b">
                             <ul>
-                                <li class="baseli">CassandraDB</li>
                                 <li class="baseli">MySQL</li>
                                 <li class="baseli">SQLite</li>
                                 <li class="baseli">MongoDB</li>
                             </ul>
                         </div>
-                        <button @click="openAccord('ac-o')" class="accord">Outros <i :class="{'fas fa-chevron-up': accord == 'ac-o', 'fas fa-chevron-down': accord != 'ac-o'}"></i></button>
+                        <button id="ac-o-b" @click="openAccord('ac-o')" class="accord">Outros <i :class="{'fas fa-chevron-up': accord == 'ac-o', 'fas fa-chevron-down': accord != 'ac-o'}"></i></button>
                         <div class="accordItem" id="ac-o">
                             <ul>
                                 <li class="baseli">
@@ -137,25 +137,57 @@
                 <p class="topic" id="projects">
                     <i class="fas fa-tasks"></i>&nbsp;&nbsp;Projetos
                 </p>
-                <p class="explic">
-                    Atualmente maior parte dos meus projetos são privados, entretanto posso-lhe mostrar um projeto online de rede social desenvolvida em Python com Django, Flutter, SCSS e Vue Vupy, essa rede social foi projetada e desenvolvida durante 2019 como um trabalho de TCC (trabalho de conclusão de curso) da ETEC Antonio Devisate adjunto de outras duas pessoas
-                </p>
-                <p class="explic">
-                    Este mesmo projeto a Vupy foi refeita sendo chamada de <a href="https://twitter.com/SocialVupy">VSN</a> (Vupy Social Networking). Este projeto ainda não está online, porém é possível vê-lo pelo <a href="https://twitter.com">Twitter</a> 
-                </p>
-                <br>
-                <div class="slide">
-                    <img src="imgs/vupy.png" class="imgs">
-                    <img src="imgs/vupyHome.png" class="imgs">
-                    <img src="imgs/vupyPerfil.png" class="imgs">
-                    <img src="imgs/vupyChat.png" class="imgs">
+                <br >
+                <div class="hopeproject"> 
+                    <img src="imgs/vupylogoold.png" class="tophigh">
+                    <p class="explic">
+                        Atualmente maior parte dos meus projetos são privados, entretanto posso-lhe mostrar um projeto de uma rede social desenvolvida em Python com Django, Flutter, SCSS e Vue, essa rede social foi projetada e desenvolvida durante 2019 como um trabalho de TCC (trabalho de conclusão de curso) da ETEC Antonio Devisate adjunto de outras duas pessoas
+                    </p>
                 </div>
+
+                <br />
+
+                <div class="hopeproject">
+                    <img src="imgs/vupylogo.png" class="tophigh">
+                    <div>
+                        <p class="explic">
+                            Este mesmo projeto foi refeito sendo chamada de <a href="https://twitter.com/SocialVupy">VSN</a> (Vupy Social Networking). Este projeto ainda não está online, porém é possível vê-lo pelo <a href="https://twitter.com/SocialVupy">Twitter</a>, <a href="https://linkedin.com/company/vupy-social-networking">LinkedIn</a> e <a href="https://github.com/Vupy">GitHub</a>
+                        </p>
+                        <br>
+                        <div class="slide">
+                            <img src="imgs/vupy.png" class="imgs">
+                            <img src="imgs/vupyHome.png" class="imgs">
+                            <img src="imgs/vupyPerfil.png" class="imgs">
+                            <img src="imgs/vupyChat.png" class="imgs">
+                        </div>
+                    </div>
+                </div>
+
                 <br> 
-                <p class="explic">
-                    Um dos meus últimos projetos foi a <a href="http://axismarketing.com.br/">Axis</a> um site para uma futura empresa que prestará serviços de marketing digital, SEO, Social mídia e entre outras coisas
-                </p>
+
+                <div class="hopeproject">
+                    <img src="imgs/axislogo.png" class="tophigh">
+                    <div>
+                        <p class="explic">
+                            Um dos meus últimos projetos foi a <a href="http://axismarketing.com.br/">Axis</a> um site para uma futura empresa que prestará serviços de marketing digital, SEO, Social mídia e entre outras coisas
+                        </p>
+                        <br>
+                        <img src="imgs/axis.png" class="imgc">
+                    </div>
+                </div>
+
                 <br>
-                <img src="imgs/axis.png" class="imgc">
+
+                <div class="hopeproject">
+                    <img src="imgs/packslogo.png" class="tophigh">
+                    
+                    <p class="explic">
+                        No ano de 2020 eu desenvolvi um instalador de pacotes da linguagem Python chamado de Packs, afim de complementar o Pip. O diferencial deste instalador é que, além de conter as funções básicas do Pip como instalar, remover e listar pacotes ele adiciona cores mais flags aos comandos, gerencia automática dos arquivos de dependências e separa dependências de produção e de desenvolvimento em arquivos separados.<br>
+
+                        O packs foi desenvolvido integralmente com Python e seu código está no <a href="https://github.com/Vupy/Packs">GitHub</a> e no <a href="https://pypi.org/project/Packs/">PyPI</a>.
+                    </p>
+                </div>
+
                 <br>
 
                 <p class="explic">
@@ -173,7 +205,7 @@
                         <a target="_blank" class="" href="https://www.linkedin.com/in/miguel-vieira-c-7a1534189/"><i class="fab fa-linkedin"></i>Linkedin</a>
                     </p>
                     <p class="explic">
-                        <a target="_blank" class="" href="https://twitter.com/Miguel11359760"><i class="fab fa-twitter"></i>Twitter</a>
+                        <a target="_blank" class="" href="https://twitter.com/MiguelVColombo"><i class="fab fa-twitter"></i>Twitter</a>
                     </p>
                     <p class="explic">
                         <a target="_blank" class="" href="https://github.com/dayknightmare"><i class="fab fa-github"></i>GitHub</a>
