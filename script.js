@@ -5,10 +5,10 @@ const app = new Vue({
         active: '',
         letters: '',
         words: [
-            'programador',
-            'pythoninsta',
-            'desenvolvedor web',
-            'desenvolvedor mobile',
+            'Programador',
+            'Pythoninsta',
+            'Desenvolvedor web',
+            'Desenvolvedor mobile',
         ]
     },
 

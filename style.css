@@ -48,7 +48,7 @@ div.main{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-bottom: 1px solid #1a1a1a;
+    border-bottom: 1px solid #d8bdc1;
 }
 
 div.main h1{
@@ -217,7 +217,6 @@ button.accord.halfboard{
     margin-top: .25rem;
 }
 
-
 div.workflow{
     width: 100%;
     display: flex;
@@ -272,9 +271,25 @@ div.hopeproject{
     /* background-color: red; */
 }
 
-
 div.hopeproject h3{
-    margin: .75rem 0;
+    margin: 1rem 0;
+    font-size: 150%;
+}
+
+div.hopeproject div.badges{
+    padding: .5rem 0;
+    padding-top: 2rem;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+div.hopeproject div.badges div.badge{
+    font-size: 90%;
+    padding: 0 .5rem;
+    margin: 0 .25rem;
+    border: 1px solid #d8bdc1;
+    border-radius: 10rem;
 }
 
 div.hopeproject.view{
