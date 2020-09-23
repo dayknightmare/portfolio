@@ -14,8 +14,8 @@
         <main>
             <div class="main">
                 <h1>Miguel Vieira Colombo</h1>
-                <h3>
-                    Conheça me, veja o que posso lhe proporcionar como desenvolvedor e como pessoa.
+                <h3 class="phasePointer">
+                    $&nbsp;  {{letters}} <span class="pointer"></span>
                 </h3>
             </div>
             <div class="menuhero">
@@ -27,190 +27,202 @@
                 </ul>
             </div>
             <div class="about">
-                <p class="topic" id="orewa">
-                    <i class="fas fa-address-book"></i>&nbsp;&nbsp;Quem sou eu
-                </p>
-                <p class="explic">
-                    Meu nome é Miguel atualmente sou um bacharelando em Ciência da computação (BCC) no <a href="https://univem.edu.br/">UNIVEM</a>, além disso, sou um desenvolvedor de site e aplicativos, com o objetivo de tornar a tecnologia e seus feitos cada vez mais acessíveis e interativos, de uma modo simples, rápido e prático. 
-                </p>
-                <br>
-                <p class="topic" id="iknow">
-                    <i class="fas fa-book-reader"></i>&nbsp;&nbsp;O que eu sei
-                </p>
-                <p class="explic">
-                    <div class="accords">
-                        <button id="ac-l-b" @click="openAccord('ac-l')" class="accord">Linguagens <i :class="{'fas fa-chevron-up': accord == 'ac-l', 'fas fa-chevron-down': accord != 'ac-l'}"></i></button>
-                        <div class="accordItem" id="ac-l">
-                            <ul>
-                                <li class="baseli">
-                                    Python
-                                    <li class="subli">
-                                        Está é a linguagem que eu mais conheço e gosto de trabalhar estudo-a desde agosto de 2016 com ênfase na parte web mais especificamente com Django e WebSockets.
-                                    </li>
-                                </li>
-                                <li class="baseli">
-                                    JavaScript
-                                    <li class="subli">
-                                        Outra linguagem de que gosto muito, e venho me aperfeiçoando a cada dia. Comecei a estudá-la em 2017 também para gerencia do DOM (Document object model), e evitar recarregamentos desnecessários da página.
-                                    </li>
-                                </li>
-                                <li class="baseli">
-                                    Sass/SCSS
-                                    <li class="subli">
-                                        Não que não goste do CSS, mas com o SCSS fica extremamente compacto os estilos que serão renderizados pelo navegador.
-                                    </li>
-                                </li>
-                                <li class="baseli">
-                                    CSS
-                                </li>
-                                <li class="baseli">NodeJs</li>
-                                <li class="baseli">PHP</li>
-                                <li class="baseli">C/C++</li>
+                <div class="block">
+                    <p class="topic" id="orewa">
+                        <i class="fas fa-address-book"></i>&nbsp;&nbsp;Quem sou eu
+                    </p>
+                    <p class="explic">
+                        Meu nome é Miguel atualmente sou um bacharelando em Ciência da computação (BCC) no <a href="https://univem.edu.br/">UNIVEM</a>, além disso, sou um desenvolvedor de site e aplicativos, com o objetivo de tornar a tecnologia e seus feitos cada vez mais acessíveis e interativos, de uma modo simples, rápido e prático. 
+                    </p>
+                </div>
 
-                            </ul>
+                <div class="block">
+                    <p class="topic" id="iknow">
+                        <i class="fas fa-book-reader"></i>&nbsp;&nbsp;O que eu sei
+                    </p>
+                    <p class="explic">
+                        <div class="accords">
+                            <button id="ac-l-b" @click="openAccord('ac-l')" class="accord">Linguagens <i :class="{'fas fa-chevron-up': accord == 'ac-l', 'fas fa-chevron-down': accord != 'ac-l'}"></i></button>
+                            <div class="accordItem" id="ac-l">
+                                <ul>
+                                    <li class="baseli">
+                                        Python
+                                        <li class="subli">
+                                            Está é a linguagem que eu mais conheço e gosto de trabalhar estudo-a desde agosto de 2016 com ênfase na parte web mais especificamente com Django e WebSockets.
+                                        </li>
+                                    </li>
+                                    <li class="baseli">
+                                        JavaScript
+                                        <li class="subli">
+                                            Outra linguagem de que gosto muito, e venho me aperfeiçoando a cada dia. Comecei a estudá-la em 2017 também para gerencia do DOM (Document object model), e evitar recarregamentos desnecessários da página.
+                                        </li>
+                                    </li>
+                                    <li class="baseli">
+                                        Sass/SCSS
+                                        <li class="subli">
+                                            Não que não goste do CSS, mas com o SCSS fica extremamente compacto os estilos que serão renderizados pelo navegador.
+                                        </li>
+                                    </li>
+                                    <li class="baseli">
+                                        CSS
+                                    </li>
+                                    <li class="baseli">NodeJs</li>
+                                    <li class="baseli">PHP (básico)</li>
+    
+                                </ul>
+                            </div>
+                            <button id="ac-f-b" @click="openAccord('ac-f')" class="accord">Frameworks <i :class="{'fas fa-chevron-up': accord == 'ac-f', 'fas fa-chevron-down': accord != 'ac-f'}"></i></button>
+                            <div class="accordItem" id="ac-f">
+                                <ul>
+                                    <li class="baseli">
+                                        Django
+                                        <li class="subli">
+                                            Este é disparadamente framework que mais gosto, a versatilidade e simplicidade do código escrito nele torna-o simples e fácil de se entender, além de que é possível fazer muito com pouca linhas de código graças ao reaproveitamento que esse proporciona. Fora que a rapidez e praticidade de configuração e instalação do Django é surreal, além de que ainda é possivel automatizar este processo e demais processos.                                        
+                                        </li>
+                                    </li>
+                                    <li class="baseli">
+                                        Flutter
+                                        <li class="subli">
+                                            Desde Março de 2019 quando eu conheci o Flutter, este framework se tornou o meu favorito para criação e desenvolvimento de app para Ios e Android, hoje consigo fazer a gerencia dos estados (States) por meio do Mobx (Pacote do Flutter), que facilita a manipulação dos widgets sem redesenhar ta tela.
+                                            
+                                        </li>
+                                    </li>
+                                    <li class="baseli">
+                                        Vue
+                                        <li class="subli">
+                                            Este é o framework front-end que eu mais utilizo em meus projeto, por causa da sua simplicidade e performance.
+                                        </li>
+                                    </li>
+                                    <li class="baseli">
+                                        React
+                                        <li class="subli">
+                                            Ainda não sou muito avançado, porém sou capaz de criar e desenvolver projetos em react sem problema algum.
+                                        </li>
+                                    </li>
+                                    <li class="baseli">ExpressJS</li>
+    
+                                </ul>
+                            </div>
+                            <button id="ac-t-b" @click="openAccord('ac-t')" class="accord">Ferramentas <i :class="{'fas fa-chevron-up': accord == 'ac-t', 'fas fa-chevron-down': accord != 'ac-t'}"></i></button>
+                            <div class="accordItem" id="ac-t">
+                                <ul>
+                                    <li class="baseli">Terminal (Linux)</li>
+                                    <li class="baseli">Visual Code</li>
+                                    <li class="baseli">Android Studio</li>
+                                    <li class="baseli">Illustrator</li>
+                                    <li class="baseli">Figma</li>
+                                </ul>
+                            </div>
+                            <button id="ac-b-b" @click="openAccord('ac-b')" class="accord">Bancos de dado<i :class="{'fas fa-chevron-up': accord == 'ac-b', 'fas fa-chevron-down': accord != 'ac-b'}"></i></button>
+                            
+                            <div class="accordItem" id="ac-b">
+                                <ul>
+                                    <li class="baseli">MySQL</li>
+                                    <li class="baseli">PostgreSQL</li>
+                                    <li class="baseli">SQLite</li>
+                                    <li class="baseli">MongoDB</li>
+                                </ul>
+                            </div>
+                            <button id="ac-o-b" @click="openAccord('ac-o')" class="accord">Outros <i :class="{'fas fa-chevron-up': accord == 'ac-o', 'fas fa-chevron-down': accord != 'ac-o'}"></i></button>
+                            <div class="accordItem" id="ac-o">
+                                <ul>
+                                    <li class="baseli">
+                                        Linux
+                                        <li class="subli">
+                                            Manjaro e Ubuntu são as minhas distros preferidas. Mas gosto de todas sem exceção.
+                                        </li>
+                                    </li>
+                                    <li class="baseli">PWA</li>
+                                    <li class="baseli">SEO (Search engine optimization)</li>
+                                </ul>
+                            </div>
                         </div>
-                        <button id="ac-f-b" @click="openAccord('ac-f')" class="accord">Frameworks <i :class="{'fas fa-chevron-up': accord == 'ac-f', 'fas fa-chevron-down': accord != 'ac-f'}"></i></button>
-                        <div class="accordItem" id="ac-f">
-                            <ul>
-                                <li class="baseli">
-                                    Django
-                                    <li class="subli">
-                                        Este é disparadamente framework que mais gosto, a versatilidade e simplicidade do código escrito nele torna-o simples e fácil de se entender, além de que é possível fazer muito com pouca linhas de código graças ao reaproveitamento que esse proporciona. Fora que a rapidez e praticidade de configuração e instalação do Django é surreal, além de que ainda é possivel automatizar este processo e demais processos.                                        
-                                    </li>
-                                </li>
-                                <li class="baseli">
-                                    Flutter
-                                    <li class="subli">
-                                        Desde Março de 2019 quando eu conheci o Flutter, este framework se tornou o meu favorito para criação e desenvolvimento de app para Ios e Android, hoje consigo fazer a gerencia dos estados (States) por meio do Mobx (Pacote do Flutter), que facilita a manipulação dos widgets sem redesenhar ta tela.
-                                        
-                                    </li>
-                                </li>
-                                <li class="baseli">
-                                    Vue
-                                    <li class="subli">
-                                        Este é o framework front-end que eu mais utilizo em meus projeto, por causa da sua simplicidade e performance.
-                                    </li>
-                                </li>
-                                <li class="baseli">
-                                    React
-                                    <li class="subli">
-                                        Ainda não sou muito avançado, porém sou capaz de criar e desenvolver projetos em react sem problema algum.
-                                    </li>
-                                </li>
-                                <li class="baseli">ExpressJS</li>
+                    </p>
+                </div>
+                <div class="block">
+                    <p class="topic" id="projects">
+                        <i class="fas fa-tasks"></i>&nbsp;&nbsp;Projetos
+                    </p>
+                    <br >
+                    
+                    <div class="blocks-grids">
+                        <div class="hopeproject"> 
+                            <img src="imgs/vupylogoold.png" class="tophigh">
+                            <h3>
+                                Vupy TCC
+                            </h3>
+                            <p class="explic">
+                                Atualmente maior parte dos meus projetos são privados, entretanto posso-lhe mostrar um projeto de uma rede social desenvolvida em Python com Django, Flutter, SCSS e Vue, esta rede social foi projetada e desenvolvida durante 2019 como um trabalho de TCC (trabalho de conclusão de curso) da ETEC Antonio Devisate adjunto de outras duas pessoas
+                            </p>
+                        </div>
+    
+                        <div class="hopeproject">
+                            <img src="imgs/vupylogo.png" class="tophigh">
+                            <h3>
+                                Vupy Social Networking
+                            </h3>
+                            <p class="explic">
+                                Este mesmo projeto foi refeito sendo chamado de <a href="https://twitter.com/SocialVupy">VSN</a> (Vupy Social Networking). Este por sua vez ainda não está online, porém é possível vê-lo pelo <a href="https://twitter.com/SocialVupy">Twitter</a>, <a href="https://linkedin.com/company/vupy-social-networking">LinkedIn</a> e <a href="https://github.com/Vupy">GitHub</a>
+                            </p>
+                            <br>
+                            <div class="slide">
+                                <img src="imgs/vupy.png" class="imgs">
+                                <img src="imgs/vupyHome.png" class="imgs">
+                                <img src="imgs/vupyPerfil.png" class="imgs">
+                                <img src="imgs/vupyChat.png" class="imgs">
+                            </div>
+                        </div>
+        
+                        <div class="hopeproject darkblue">
+                            <img src="imgs/axislogo.png" class="tophigh">
+                            <h3>
+                                Axis
+                            </h3>
+                            <p class="explic">
+                                Um dos meus últimos projetos foi a <a href="http://axismarketing.com.br/">Axis</a> um site para uma futura empresa que prestará serviços de marketing digital, SEO, Social mídia e entre outras coisas
+                            </p>
+                            <br>
+                            <img src="imgs/axis.png" class="imgc">
+                        </div>
+        
+                        <div class="hopeproject">
+                            <img src="imgs/packslogo.png" class="tophigh">
+                            <h3>
+                                Packs
+                            </h3>
+                            
+                            <p class="explic">
+                                Packs é um instalador de pacotes do Python, similar ao PIP todavia com mais funcionabilidades cores e flags.<br>
+                                <br>
+                                <a href="https://github.com/Vupy/Packs">GitHub</a> | <a href="https://pypi.org/project/Packs/">PyPI</a>.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <br>
+    
+                    <p class="explic">
+                        Além desse projeto lhe convido à visitar meu <a href="https://github.com/dayknightmare">Github</a> e conhecer mais alguns dos meus projetos que estão em público.
+                    </p>
+                </div>
 
-                            </ul>
-                        </div>
-                        <button id="ac-t-b" @click="openAccord('ac-t')" class="accord">Ferramentas <i :class="{'fas fa-chevron-up': accord == 'ac-t', 'fas fa-chevron-down': accord != 'ac-t'}"></i></button>
-                        <div class="accordItem" id="ac-t">
-                            <ul>
-                                <li class="baseli">Terminal (Linux)</li>
-                                <li class="baseli">Visual Code</li>
-                                <li class="baseli">Android Studio</li>
-                                <li class="baseli">Illustrator</li>
-                                <li class="baseli">Figma</li>
-                            </ul>
-                        </div>
-                        <button id="ac-b-b" @click="openAccord('ac-b')" class="accord">Bancos de dado<i :class="{'fas fa-chevron-up': accord == 'ac-b', 'fas fa-chevron-down': accord != 'ac-b'}"></i></button>
+                <div class="block">
+                    <p class="topic" id="moshi">
+                        <i class="fas fa-address-card"></i>&nbsp;&nbsp;Contatos
+                    </p>
+    
+                    <div class="workflow">
                         
-                        <div class="accordItem" id="ac-b">
-                            <ul>
-                                <li class="baseli">MySQL</li>
-                                <li class="baseli">SQLite</li>
-                                <li class="baseli">MongoDB</li>
-                            </ul>
-                        </div>
-                        <button id="ac-o-b" @click="openAccord('ac-o')" class="accord">Outros <i :class="{'fas fa-chevron-up': accord == 'ac-o', 'fas fa-chevron-down': accord != 'ac-o'}"></i></button>
-                        <div class="accordItem" id="ac-o">
-                            <ul>
-                                <li class="baseli">
-                                    Linux
-                                    <li class="subli">
-                                        Manjaro e Ubuntu são as minhas distros preferidas. Mas gosto de todas sem exceção.
-                                    </li>
-                                </li>
-                                <li class="baseli">PWA</li>
-                                <li class="baseli">SEO (Search engine optimization)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </p>
-                <p class="topic" id="projects">
-                    <i class="fas fa-tasks"></i>&nbsp;&nbsp;Projetos
-                </p>
-                <br >
-                <div class="hopeproject"> 
-                    <img src="imgs/vupylogoold.png" class="tophigh">
-                    <p class="explic">
-                        Atualmente maior parte dos meus projetos são privados, entretanto posso-lhe mostrar um projeto de uma rede social desenvolvida em Python com Django, Flutter, SCSS e Vue, essa rede social foi projetada e desenvolvida durante 2019 como um trabalho de TCC (trabalho de conclusão de curso) da ETEC Antonio Devisate adjunto de outras duas pessoas
-                    </p>
-                </div>
-
-                <br />
-
-                <div class="hopeproject">
-                    <img src="imgs/vupylogo.png" class="tophigh">
-                    <div>
                         <p class="explic">
-                            Este mesmo projeto foi refeito sendo chamada de <a href="https://twitter.com/SocialVupy">VSN</a> (Vupy Social Networking). Este projeto ainda não está online, porém é possível vê-lo pelo <a href="https://twitter.com/SocialVupy">Twitter</a>, <a href="https://linkedin.com/company/vupy-social-networking">LinkedIn</a> e <a href="https://github.com/Vupy">GitHub</a>
+                            <a target="_blank" class="" href="https://www.linkedin.com/in/miguel-vieira-c-7a1534189/"><i class="fab fa-linkedin"></i>Linkedin</a>
                         </p>
-                        <br>
-                        <div class="slide">
-                            <img src="imgs/vupy.png" class="imgs">
-                            <img src="imgs/vupyHome.png" class="imgs">
-                            <img src="imgs/vupyPerfil.png" class="imgs">
-                            <img src="imgs/vupyChat.png" class="imgs">
-                        </div>
-                    </div>
-                </div>
-
-                <br> 
-
-                <div class="hopeproject">
-                    <img src="imgs/axislogo.png" class="tophigh">
-                    <div>
                         <p class="explic">
-                            Um dos meus últimos projetos foi a <a href="http://axismarketing.com.br/">Axis</a> um site para uma futura empresa que prestará serviços de marketing digital, SEO, Social mídia e entre outras coisas
+                            <a target="_blank" class="" href="https://twitter.com/MiguelVColombo"><i class="fab fa-twitter"></i>Twitter</a>
                         </p>
-                        <br>
-                        <img src="imgs/axis.png" class="imgc">
+                        <p class="explic">
+                            <a target="_blank" class="" href="https://github.com/dayknightmare"><i class="fab fa-github"></i>GitHub</a>
+                        </p>
                     </div>
-                </div>
-
-                <br>
-
-                <div class="hopeproject">
-                    <img src="imgs/packslogo.png" class="tophigh">
-                    
-                    <p class="explic">
-                        No ano de 2020 eu desenvolvi um instalador de pacotes da linguagem Python chamado de Packs, afim de complementar o Pip. O diferencial deste instalador é que, além de conter as funções básicas do Pip como instalar, remover e listar pacotes ele adiciona cores mais flags aos comandos, gerencia automática dos arquivos de dependências e separa dependências de produção e de desenvolvimento em arquivos separados.<br>
-
-                        O packs foi desenvolvido integralmente com Python e seu código está no <a href="https://github.com/Vupy/Packs">GitHub</a> e no <a href="https://pypi.org/project/Packs/">PyPI</a>.
-                    </p>
-                </div>
-
-                <br>
-
-                <p class="explic">
-                    Além desse projeto lhe convido à visitar meu <a href="https://github.com/dayknightmare">Github</a> e conhecer mais alguns dos meus projetos que estão em público.
-                </p>
-
-
-                <p class="topic" id="moshi">
-                    <i class="fas fa-address-card"></i>&nbsp;&nbsp;Contatos
-                </p>
-
-                <div class="workflow">
-                    
-                    <p class="explic">
-                        <a target="_blank" class="" href="https://www.linkedin.com/in/miguel-vieira-c-7a1534189/"><i class="fab fa-linkedin"></i>Linkedin</a>
-                    </p>
-                    <p class="explic">
-                        <a target="_blank" class="" href="https://twitter.com/MiguelVColombo"><i class="fab fa-twitter"></i>Twitter</a>
-                    </p>
-                    <p class="explic">
-                        <a target="_blank" class="" href="https://github.com/dayknightmare"><i class="fab fa-github"></i>GitHub</a>
-                    </p>
                 </div>
             </div>
         </main>

@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: 'Montserrat';
-    line-height: 1.55;
+    font-family: 'Source Sans Pro', sans-serif;;
+    line-height: 1.65;
     scrollbar-width: thin;
     scrollbar-color: #e7002a;
 }
@@ -40,15 +40,15 @@ div.main{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     height: 100%;
     box-shadow: 2px 0px 6px rgba(0, 0, 0, .5);
-    padding: 11rem 1rem;
-    background-image: url(./imgs/back.svg);
+    padding: 11rem 3rem;
+    /* background-image: url(./imgs/back.svg); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border-bottom: 1px solid #1a1a1a;
 }
 
 div.main h1{
@@ -57,11 +57,11 @@ div.main h1{
 }
 
 div.main h1, div.main h3{
-    text-align: center;
+    /* text-align: center; */
 } 
 
 div.about{
-    max-width: 1024px;
+    max-width: 1300px;
     margin-bottom: 1.25rem;
     padding: 2rem;
 }
@@ -140,7 +140,7 @@ div.menuhero::after{
     display: block;
     bottom: 0;
     height: 1px;
-    background: rgba(0, 0, 0, .15);
+    background: rgba(0, 0, 0, .1);
 }
 
 div.menuhero ul {
@@ -148,25 +148,26 @@ div.menuhero ul {
     height: 4rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
 }
 
 div.menuhero ul li {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     list-style: none;
-    font-size: 115%;
+    font-size: 95%;
     font-weight: 600;
     cursor: pointer;
+    margin: 0 .75rem;
     transition: 0.3s ease-in-out;
-    height: 100%;
-    line-height: 4rem;
+    /* height: 100%; */
+    /* line-height: 4rem; */
     text-align: center;
 }
 
 div.menuhero ul li.active{
     color: #e7002a;
-    box-shadow: inset 0 -3.5px 0 -1px #e7002a;
+    box-shadow: inset 0 -2.5px 0 -1px #e7002a;
 }
 
 div.accordItem{
@@ -258,14 +259,22 @@ div.slide{
 
 div.hopeproject{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     padding: .5rem 0;
     position: relative;
     opacity: 0;
-    padding-bottom: 1rem;
+    padding: 1rem;
     transition: .5s ease;
     top: 5rem;
+    border: 1px solid #d8bdc1;
+    border-radius: 12px;
+    /* background-color: red; */
+}
+
+
+div.hopeproject h3{
+    margin: .75rem 0;
 }
 
 div.hopeproject.view{
@@ -273,7 +282,7 @@ div.hopeproject.view{
     top: 0;
 }
 
-div.hopeproject::after{
+/* div.hopeproject::after{
     content: '';
     width: 100%;
     height: 1px;
@@ -281,8 +290,7 @@ div.hopeproject::after{
     display: block;
     position: absolute;
     bottom: -1rem;
-}
-
+} */
 
 div.hopeproject img.tophigh{
     width: 4rem;
@@ -291,11 +299,43 @@ div.hopeproject img.tophigh{
     background: white;
     padding: .25rem;
     box-shadow: 1px 1px 5px -1px rgba(0,0,0,.2);
-    margin-right: .5rem;
+    /* margin-right: .5rem; */
 }
 
 div.hopeproject p.explic{
     padding-top: 0;
+    font-size: 125%;
+    line-height: 2;
+    max-width: 80%;
+    text-align: center;
+}
+
+span.pointer{
+    width: 3px;
+    height: 18px;
+    display: block;
+    margin-left: .25rem;
+    animation: blink 1s infinite;
+}
+
+h3.phasePointer{
+    display: flex;
+    align-items: center;
+}
+
+div.blocks-grids{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .25rem;
+}
+
+@keyframes blink{
+    50%{
+        background: black;
+    }
+    100%{
+        background: none;
+    }
 }
 
 @keyframes halfboard{

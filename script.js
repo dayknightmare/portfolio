@@ -3,13 +3,52 @@ const app = new Vue({
     data: {
         accord: '',
         active: '',
+        letters: '',
+        words: [
+            'programador',
+            'pythoninsta',
+            'desenvolvedor web',
+            'desenvolvedor mobile',
+        ]
     },
 
     created() {
         window.addEventListener("scroll", this.changeSelectedItem)
+        this.changeWords(0)
     },
 
     methods: {
+        async delay(ms){
+            return new Promise(resolve  => {
+                setTimeout(() => {
+                    resolve(2)
+                }, ms)
+            })
+        },
+
+        async changeWords(index){
+            for (let i of this.words[index]){
+                this.letters += i
+                await this.delay(125)
+            }
+
+            await this.delay(600)
+            let p = Array.from(this.words[index])
+
+            for (let i of this.words[index]){
+                p.pop()
+                this.letters = p.join('')
+                await this.delay(50)
+            }
+            await this.delay(600)
+
+            if (index == this.words.length - 1){
+                index = -1
+            }
+
+            this.changeWords(index + 1)
+        },
+
         openAccord(id) {
             let acs = document.querySelectorAll('div.accordItem');
             let buttons = document.querySelectorAll('button.accord')
