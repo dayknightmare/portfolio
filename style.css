@@ -43,8 +43,8 @@ div.main{
     /* align-items: center; */
     height: 100%;
     box-shadow: 2px 0px 6px rgba(0, 0, 0, .5);
-    padding: 11rem 3rem;
-    /* background-image: url(./imgs/back.svg); */
+    padding: 13rem 3rem;
+    background-image: url(./imgs/backimg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -52,6 +52,7 @@ div.main{
 }
 
 div.main h1{
+    font-size: 3rem;
     margin-bottom: 1.8rem;
     color: #1a1a1a;
 }
@@ -281,13 +282,15 @@ div.hopeproject div.badges{
     padding-top: 2rem;
     margin-top: auto;
     display: flex;
+    justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 div.hopeproject div.badges div.badge{
     font-size: 90%;
     padding: 0 .5rem;
-    margin: 0 .25rem;
+    margin: .25rem;
     border: 1px solid #d8bdc1;
     border-radius: 10rem;
 }
@@ -400,9 +403,9 @@ div.blocks-grids{
     }
 }
 
-@media only screen and (max-width: 768px){
-    div.menuhero ul li span{
-        display: none;
+@media only screen and (max-width: 940px){
+    div.blocks-grids{
+        grid-template-columns: 1fr !important;
     }
 }
 
@@ -412,10 +415,16 @@ div.blocks-grids{
         justify-content: center;
         align-items: center;
     }
-
+    
     div.hopeproject img.tophigh{
         width: 5rem !important;
         height: 5rem !important;
         margin-bottom: .5rem;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    div.menuhero ul li span{
+        display: none;
     }
 }
