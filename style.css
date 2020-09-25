@@ -197,6 +197,7 @@ button.accord i{
 }
 
 button.accord{
+    cursor: pointer;
     background: none;
     border: 2px solid transparent;
     padding: .5rem 1rem;
@@ -207,12 +208,12 @@ button.accord{
     position: relative;
     justify-content: space-between;
     background: #FFFDFF;
-    border-left: 2px solid #e7002a;
+    border-left: 2px solid #fcbbc8;
     transition: 0.3s ease-in-out;
 }
 
 button.accord.halfboard{
-    border: 2px solid #e7002a;
+    border: 2px solid #ed6681;
     animation: 1s halfboard;
     border-radius: .5rem;
     margin-top: .25rem;
@@ -267,7 +268,8 @@ div.hopeproject{
     padding: 1rem;
     transition: .5s ease;
     top: 5rem;
-    border: 1px solid #d8bdc1;
+    /* border: 1px solid #d8bdc1; */
+    box-shadow: 0px 0px 10px -5px rgb(89, 89, 89);
     border-radius: 12px;
     /* background-color: red; */
 }
@@ -344,7 +346,7 @@ h3.phasePointer{
 div.blocks-grids{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: .25rem;
+    gap: .75rem;
 }
 
 @keyframes blink{
@@ -359,25 +361,25 @@ div.blocks-grids{
 @keyframes halfboard{
     0%{
         border: 2px solid transparent;
-        border-left: 2px solid #e7002a;
+        border-left: 2px solid #ed6681;
         border-radius: 0;
     }
 
     25%{
         border: 2px solid transparent;
-        border-left: 2px solid #e7002a;
-        border-bottom: 2px solid #e7002a;
+        border-left: 2px solid #ed6681;
+        border-bottom: 2px solid #ed6681;
     }
 
     50%{
         border: 2px solid transparent;
-        border-left: 2px solid #e7002a;
-        border-bottom: 2px solid #e7002a;
-        border-right: 2px solid #e7002a;
+        border-left: 2px solid #ed6681;
+        border-bottom: 2px solid #ed6681;
+        border-right: 2px solid #ed6681;
     }
 
     75%{
-        border: 2px solid #e7002a;
+        border: 2px solid #ed6681;
         border-radius: .5rem;
     }
 }
