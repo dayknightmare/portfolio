@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://vupytcc.pythonanywhere.com/static/css/icons.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     
     <title>Miguel Vieira Colombo | Portfólio</title>
@@ -20,6 +19,7 @@
             </div>
             <div class="menuhero">
                 <ul>
+                    <li class="turnleft myname">__Miguel__</li>
                     <li :class="{'active': active == 'orewa'}" @click="smoothDirection('orewa')"><i class="fas fa-address-book"></i> <span>Quem sou eu</span></li>
                     <li :class="{'active': active == 'iknow'}" @click="smoothDirection('iknow')"><i class="fas fa-book-reader"></i> <span>O que eu sei</span></li>
                     <li :class="{'active': active == 'projects'}" @click="smoothDirection('projects')"><i class="fas fa-tasks"></i> <span>Projetos</span></li>
@@ -35,6 +35,8 @@
                         Meu nome é Miguel atualmente sou um bacharelando em Ciência da computação (BCC) no <a href="https://univem.edu.br/">UNIVEM</a>, além disso, sou um desenvolvedor de site e aplicativos, com o objetivo de tornar a tecnologia e seus feitos cada vez mais acessíveis e interativos, de uma modo simples, rápido e prático. 
                     </p>
                 </div>
+                <hr>
+                <br>
 
                 <div class="block">
                     <p class="topic" id="iknow">
@@ -142,6 +144,9 @@
                         </div>
                     </p>
                 </div>
+                <hr>
+                <br>
+
                 <div class="block">
                     <p class="topic" id="projects">
                         <i class="fas fa-tasks"></i>&nbsp;&nbsp;Projetos
@@ -233,6 +238,8 @@
                         Além desse projeto lhe convido à visitar meu <a href="https://github.com/dayknightmare">Github</a> e conhecer mais alguns dos meus projetos que estão em público.
                     </p>
                 </div>
+                <hr>
+                <br>
 
                 <div class="block">
                     <p class="topic" id="moshi">

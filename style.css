@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
     font-family: 'Source Sans Pro', sans-serif;;
     line-height: 1.65;
     scrollbar-width: thin;
-    scrollbar-color: #e7002a;
+    scrollbar-color: #E00A4A;
 }
 
 html, body, main, div.app{
@@ -25,7 +25,7 @@ html, body, main, div.app{
 }
 
 *::-webkit-scrollbar-thumb {
-    background: #e7002a;
+    background: #E00A4A;
 }
 
 main{
@@ -36,14 +36,20 @@ main{
     min-height: 100%;
 }
 
+hr{
+    margin-top: 1rem;
+    border: 1px solid rgba(224, 10, 74, 0.09);
+}
+
 div.main{
     width: 100%;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    height: 100%;
+    height: 100vh;
+    justify-content: center;
     box-shadow: 2px 0px 6px rgba(0, 0, 0, .5);
-    padding: 13rem 3rem;
+    padding: 0 3rem;
     background-image: url(./imgs/backimg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -76,7 +82,7 @@ p.topic{
 }
 
 p.topic i {
-    color: #e7002a;
+    color: #E00A4A;
 }
 
 p.explic{
@@ -98,14 +104,14 @@ li.baseli{
 }
 
 a{
-    color: #e7002a;
+    color: #E00A4A;
     text-decoration: none;
     font-weight: 600;
 }
 
 a.underDark{
     text-decoration: underline;
-    text-decoration-color: #e7002a;
+    text-decoration-color: #E00A4A;
     color: #000;
 }
 
@@ -156,19 +162,27 @@ div.menuhero ul {
 div.menuhero ul li {
     /* flex-grow: 1; */
     list-style: none;
-    font-size: 95%;
+    font-size: 105%;
     font-weight: 600;
     cursor: pointer;
-    margin: 0 .75rem;
+    margin: 0 1.25rem;
     transition: 0.3s ease-in-out;
     /* height: 100%; */
     /* line-height: 4rem; */
     text-align: center;
 }
 
+div.menuhero ul li.turnleft{
+    margin-right: auto;
+}
+
+div.menuhero ul li.myname{
+    font-size: 135%;
+}
+
 div.menuhero ul li.active{
-    color: #e7002a;
-    box-shadow: inset 0 -2.5px 0 -1px #e7002a;
+    color: #E00A4A;
+    box-shadow: inset 0 -2.5px 0 -1px #E00A4A;
 }
 
 div.accordItem{
@@ -239,7 +253,7 @@ div.workflow p a{
 }
 
 div.workflow p a:hover{
-    color: #e7002a;
+    color: #E00A4A;
 }
 
 
@@ -254,7 +268,7 @@ div.slide{
     width: 100%;
     overflow-x: auto;
     padding: .5rem;
-    scrollbar-color: #e7002a;
+    scrollbar-color: #E00A4A;
     scrollbar-width: thin;
 }
 
@@ -290,10 +304,12 @@ div.hopeproject div.badges{
 }
 
 div.hopeproject div.badges div.badge{
-    font-size: 90%;
+    font-size: 85%;
     padding: 0 .5rem;
     margin: .25rem;
-    border: 1px solid #d8bdc1;
+    border: 1px solid #E00A4A;
+    color: #E00A4A;
+    font-weight: 600;
     border-radius: 10rem;
 }
 
@@ -409,7 +425,18 @@ div.blocks-grids{
     div.blocks-grids{
         grid-template-columns: 1fr !important;
     }
+
+    div.main h1{
+        font-size: 2.5rem;
+    }
 }
+
+@media only screen and (max-width: 800px){
+    div.main{
+        background-position: 30%;
+    }
+}
+
 
 @media only screen and (max-width: 669px){
     div.hopeproject{
@@ -428,5 +455,20 @@ div.blocks-grids{
 @media only screen and (max-width: 480px){
     div.menuhero ul li span{
         display: none;
+    }
+
+    div.main{
+        background-position: 90%;
+    }
+
+    div.main h1{
+        color: rgb(228, 228, 228);
+        font-size: 2.5rem;
+        background-position: 75%;
+    }
+
+    div.main h3{
+        color: rgb(228, 228, 228);
+        font-size: 1.5rem;
     }
 }
