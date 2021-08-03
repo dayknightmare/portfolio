@@ -122,8 +122,6 @@ div.app {
             line-height: 171px;
             letter-spacing: 0.01em;
             text-shadow: 1px 1px 0px #ffffff, 0px 1px 0px #ffffff, 1px 0px 0px #ffffff;
-            // position: absolute;
-            // left: 50%;
         }
 
         div.overlay__filter__darken {
@@ -287,7 +285,7 @@ div.app {
     nav {
         width: 100vw;
         height: 4em;
-        background-color: #030001;
+        background-color: #010211;
         color: white;
         display: flex;
         flex-direction: row;
@@ -310,6 +308,11 @@ div.app {
                 cursor: pointer;
                 list-style: none;
                 padding: 0 1rem;
+                font-size: .9rem;
+
+                span {
+                    font-size: .9rem;
+                }
             }
         }
     }
@@ -567,16 +570,18 @@ div.app {
 @media only screen and (max-width: 680px) {
     p.long__text {
         font-size: 1rem !important;
-        padding-right: 1rem !important;
+        padding-right: 1.5rem !important;
     }
 
     nav {
         flex-direction: column !important;
+        justify-content: center !important;
         min-height: 4em !important;
         height: auto !important;
 
         span {
             margin: 1rem 0;
+            display: none;
         }
 
         ul {
@@ -584,6 +589,7 @@ div.app {
 
             li {
                 margin: .5rem !important;
+                font-size: 1.4rem !important;
             }
         }
     }
@@ -608,5 +614,57 @@ div.app {
                 flex-direction: column-reverse !important;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    div.compass__cell div.grid p {
+        font-size: 2rem !important;
+    }
+
+    div.footer {
+        height: 100vh !important;
+
+        div.background__footer {
+            height: 100vh !important;
+        }
+        div.overlay__filter__darken {
+            height: 100vh !important;
+        }
+        div.overlay__filter__overlay {
+            height: 100vh !important;
+        }
+        div.overlay__filter__hue {
+            height: 100vh !important;
+        }
+        div.overlay__filter__purple {
+            height: 100vh !important;
+        }
+        div.footer__content {
+            height: 100vh !important;
+        }
+    }
+
+    div.phases {
+        width: 50px !important;
+        min-width: 50px !important;
+
+        div.bullet {
+            height: 50px !important;
+        }
+        
+        svg {
+            font-size: 1.7rem !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .redAndRed {
+        font-size: 4rem !important;
+    }
+
+    p.master__phase {
+        font-size: .9rem !important;
     }
 }
