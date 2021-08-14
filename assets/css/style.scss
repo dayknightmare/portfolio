@@ -440,6 +440,16 @@ div.app {
                                 flex-direction: row;
                                 justify-content: center;
                                 align-items: center;
+                                position: relative;
+
+                                i.arrow {
+                                    font-size: 4rem;
+                                    position: absolute;
+                                    top: 3rem;
+                                    right: 3rem;
+                                    color: #E00A4A;
+                                    opacity: .6;
+                                }
 
                                 div.grid {
                                     display: grid;
@@ -453,6 +463,12 @@ div.app {
 
                                         &:hover {
                                             color: $color;
+                                        }
+
+                                        span {
+                                            font-size: 1.5rem;
+                                            font-weight: 600;
+                                            color: #b9b9b9;
                                         }
                                     }
                                 }
@@ -474,6 +490,15 @@ div.app {
                                     img {
                                         width: 7rem;
                                         height: 7rem;
+                                    }
+
+                                    p {
+                                        grid-column: 1 / span 3;
+                                        text-align: center;
+                                        color: #E7002A;
+                                        font-size: 1.7rem;
+                                        font-weight: 600;
+                                        margin-bottom: 1rem;
                                     }
                                 }
                             }
@@ -539,6 +564,11 @@ div.app {
     div.compass__diff {
         width: 100vw !important;
 
+        i.arrow {
+            top: 3rem !important;
+            font-size: 3rem !important;
+        }
+
         div.compass__content {
             width: calc(100vw - 3em) !important;
 
@@ -551,6 +581,10 @@ div.app {
 
                 div.grid__3 {
                     width: 30% !important;
+
+                    p {
+                        font-size: 1.3rem !important;
+                    }
                     
                     img {
                         width: 3rem !important;
@@ -595,7 +629,30 @@ div.app {
     }
 
     div.compass__long {
-        height: 100vh !important;
+        height: auto !important;
+
+        div.compass__diff {
+            height: auto !important;
+
+            div.compass__content {
+                height: auto !important;
+
+                div.grid__3 {
+                    width: 60% !important;
+                }
+
+                div.compass__cells {
+                    height: auto !important;
+                }
+    
+                div.compass__cell {
+                    height: auto !important;
+                    min-height: 120vh !important;
+                    overflow: auto;
+                    flex-direction: column-reverse !important;
+                }
+            }
+        }
 
         div.grid{
             grid-template-columns: 1fr !important;
@@ -603,16 +660,6 @@ div.app {
 
         div.context {
             width: 100% !important;
-        }
-
-        div.compass__content {
-            height: 100vh !important;
-
-            div.compass__cell {
-                overflow: auto;
-                height: 100vh !important;
-                flex-direction: column-reverse !important;
-            }
         }
     }
 }
