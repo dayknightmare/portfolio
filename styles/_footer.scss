@@ -1,0 +1,71 @@
+div.footer {
+    background-image: url('/img/footer.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h3 {
+        font-size: 2.5rem;
+        font-weight: 100;
+        margin-bottom: 4rem;
+    }
+
+    div.overlay {
+        background-color: transparentize($color: $bg_color, $amount: .15);
+
+        div.footer__message {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $primary_color;
+            color: $bg_color;
+            font-size: 1.125rem;
+            font-weight: 300;
+            padding: .5rem 1rem;
+        }
+
+        div.footer__container {
+            padding: 2rem;
+
+            div.footer__items {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-bottom: 4rem;
+
+                div.footer__item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    cursor: pointer;
+
+                    &:hover {
+                        img {
+                            filter: invert(100%);
+                            width: 4.7rem;
+                        }
+
+                        p {
+                            color: white;
+                        }
+                    }
+
+                    img {
+                        filter: invert(70%);
+                        width: 4.5rem;
+                        height: auto;
+                        margin-bottom: 1.5rem;
+                        transition: 0.3s ease-in;
+                    }
+
+                    p {
+                        font-size: 1.25rem;
+                        font-weight: 300;
+                        transition: 0.3s ease-in;
+                    }
+                }
+            }
+        }
+    }
+}
