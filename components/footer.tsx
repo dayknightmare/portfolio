@@ -41,19 +41,19 @@ const Footer = () => {
 
                     <div className="footer__items">
                         <div className="footer__item" onClick={() => goToSite('https://www.linkedin.com/in/miguel-vieira-c-7a1534189/')}>
-                            <Image layout="raw" src={require('../assets/img/linkedin.svg')} alt="contact me" />
+                            <Image width={'100%'} height={'100%'} src={'/img/linkedin.svg'} alt="contact me" />
                             <p>LinkedIn</p>
                         </div>
                         <div className="footer__item" onClick={() => goToSite('https://twitter.com/MiguelVColombo')}>
-                            <Image layout="raw" src={require('../assets/img/twitter.svg')} alt="contact me" />
+                            <Image width={'100%'} height={'100%'} src={'/img/twitter.svg'} alt="contact me" />
                             <p>Twitter</p>
                         </div>
                         <div className="footer__item" onClick={() => goToSite('https://github.com/dayknightmare')}>
-                            <Image layout="raw" src={require('../assets/img/github.svg')} alt="contact me" />
+                            <Image width={'100%'} height={'100%'} src={'/img/github.svg'} alt="contact me" />
                             <p>Github</p>
                         </div>
                         <div className="footer__item" onClick={() => goToSite('mailto:miguelcolombo3@gmail.com')}>
-                            <Image layout="raw" src={require('../assets/img/mail.svg')} alt="contact me" />
+                            <Image width={'100%'} height={'100%'} src={'/img/mail.svg'} alt="contact me" />
                             <p>Email</p>
                         </div>
                     </div>

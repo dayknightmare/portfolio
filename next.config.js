@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
+
+const debug = process.env.NODE_ENV !== 'production'
+
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -10,10 +13,10 @@ const nextConfig = {
       layoutRaw: true
     }
   },
+  exportPathMap: () => ({
+    '/': { page: '/' },
+  }),
+  assetPrefix: !debug ? '/portfolio/' : '',
 }
-
-const isProd = process.env.NODE_ENV === 'production'
-
-nextConfig.assetPrefix = isProd ? '/portfolio' : ''
 
 module.exports = nextConfig

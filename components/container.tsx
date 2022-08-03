@@ -56,10 +56,10 @@ const Container = () => {
                 title="Knowledge"
             >
                 <div className="know__items">
-                    <KnowItem active={active == 0} onClickFun={() => { setActive(0); setActiveLangIndex(0) }} icon={require('../assets/img/lang.svg')} title='Languages'></KnowItem>
-                    <KnowItem active={active == 1} onClickFun={() => { setActive(1); setActiveLangIndex(0) }} icon={require('../assets/img/box.svg')} title='Frameworks'></KnowItem>
-                    <KnowItem active={active == 2} onClickFun={() => { setActive(2); setActiveLangIndex(0) }} icon={require('../assets/img/db.svg')} title='Databases'></KnowItem>
-                    <KnowItem active={active == 3} onClickFun={() => { setActive(3); setActiveLangIndex(0) }} icon={require('../assets/img/cogs.svg')} title='Tools'></KnowItem>
+                    <KnowItem active={active == 0} onClickFun={() => { setActive(0); setActiveLangIndex(0) }} icon={'/img/lang.svg'} title='Languages'></KnowItem>
+                    <KnowItem active={active == 1} onClickFun={() => { setActive(1); setActiveLangIndex(0) }} icon={'/img/box.svg'} title='Frameworks'></KnowItem>
+                    <KnowItem active={active == 2} onClickFun={() => { setActive(2); setActiveLangIndex(0) }} icon={'/img/db.svg'} title='Databases'></KnowItem>
+                    <KnowItem active={active == 3} onClickFun={() => { setActive(3); setActiveLangIndex(0) }} icon={'/img/cogs.svg'} title='Tools'></KnowItem>
                 </div>
 
                 <br />
@@ -70,7 +70,12 @@ const Container = () => {
                             <LangItem
                                 icon={lang.icon}
                                 title={lang.name}
-                                onClickFun={() => setActiveLangIndex(index)}
+                                onClickFun={() => {
+                                    document.querySelector('#detail_lang').scrollIntoView({
+                                        behavior: 'smooth'
+                                    })
+                                    setActiveLangIndex(index)
+                                }}
                                 key={lang.name + '-' + knowsTypes[active]}
                                 active={index == activeLangIndex}
                                 level={lang.level}
@@ -82,7 +87,7 @@ const Container = () => {
             </ContainerSection>
 
             <ContainerSection title=''>
-                <h3>
+                <h3 id="detail_lang">
                     {knowJson[knowsTypes[active]][activeLangIndex].name} <span className="sub">{knowJson[knowsTypes[active]][activeLangIndex].level}</span>
                 </h3>
                 <br />
@@ -91,16 +96,16 @@ const Container = () => {
 
             <ContainerSection title="Projects">
                 <ProjectItem
-                    icon={require('../assets/img/vupy.svg')}
-                    imageBackground={'/img/vupy.gif'}
+                    icon={'/img/vupy.svg'}
+                    imageBackground={'/portfolio/img/vupy.gif'}
                     title="Vupy"
                     imgs={[
-                        require('../assets/img/vupy/a1.png'),
-                        require('../assets/img/vupy/a2.png'),
-                        require('../assets/img/vupy/a3.png'),
-                        require('../assets/img/vupy/a4.png'),
-                        require('../assets/img/vupy/a5.png'),
-                        require('../assets/img/vupy/a6.png'),
+                        '/img/vupy/a1.png',
+                        '/img/vupy/a2.png',
+                        '/img/vupy/a3.png',
+                        '/img/vupy/a4.png',
+                        '/img/vupy/a5.png',
+                        '/img/vupy/a6.png',
                     ]}
                 >
                     <p>
@@ -118,15 +123,15 @@ const Container = () => {
                 </ProjectItem>
                 <br />
                 <ProjectItem
-                    icon={require('../assets/img/unides.svg')}
-                    imageBackground={'/img/unides.gif'}
+                    icon={'/img/unides.svg'}
+                    imageBackground={'/portfolio/img/unides.gif'}
                     title="Unides"
                     imgs={[
-                        require('../assets/img/unides/a1.png'),
-                        require('../assets/img/unides/a2.png'),
-                        require('../assets/img/unides/a3.png'),
-                        require('../assets/img/unides/a4.png'),
-                        require('../assets/img/unides/a5.png'),
+                        '/img/unides/a1.png',
+                        '/img/unides/a2.png',
+                        '/img/unides/a3.png',
+                        '/img/unides/a4.png',
+                        '/img/unides/a5.png',
                     ]}
                 >
                     <p>

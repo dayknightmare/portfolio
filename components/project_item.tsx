@@ -1,12 +1,12 @@
 import React from 'react'
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 
 type Props = {
     children?: React.ReactNode,
     imageBackground: string,
-    icon: StaticImageData,
+    icon: string,
     title: string,
-    imgs: StaticImageData[],
+    imgs: string[],
 }
 
 const ProjectItem: React.FC<Props> = ({ children, icon, imageBackground, title, imgs }) => {
@@ -24,7 +24,7 @@ const ProjectItem: React.FC<Props> = ({ children, icon, imageBackground, title, 
                         <div className="images">
                             {
                                 imgs.map((img, index) => (
-                                    <Image src={img} layout="raw" alt="Project image" key={title + '-' + index} placeholder='blur'></Image>
+                                    <Image src={img} width={'100%'} height={'0'} layout="raw" alt="Project image" key={title + '-' + index} placeholder="empty"></Image>
                                 ))
                             }
                         </div>

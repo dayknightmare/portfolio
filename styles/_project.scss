@@ -49,8 +49,11 @@ div.project__item {
 
             div.images {
                 width: 100%;
-                overflow: scroll;
-                white-space: nowrap;
+                overflow: hidden;
+                overflow-x: auto;
+                display: flex;
+                height: min-content;
+                max-height: 80vh;
 
                 div.image_item {
                     height: 1rem;
@@ -58,10 +61,13 @@ div.project__item {
                 
                 img {
                     width: 80%;
-                    height: auto;
+                    min-height: min-content;
+                    height: max-content;
+                    max-height: min-content;
                     display: inline-block;
                     margin-right: 1.5rem;
                     border-radius: 2rem;
+                    flex: none;
                 }
             }
         }

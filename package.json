@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "deploy": "next build && next export && git add out/ && touch out/.nojekyll",
+    "deploy": "next build && next export && touch out/.nojekyll && git add out/",
     "push": "git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
