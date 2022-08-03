@@ -1,0 +1,36 @@
+div.banner {
+    height: 100vh;
+    background-image: url("../assets/img/banner.png");
+
+    div.overlay {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba($bg_color, 0.85);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 0;
+        }
+
+        h1 {
+            z-index: 2;
+            color: white;
+            font-weight: 300;
+            font-size: 11.5rem;
+            text-align: center;
+
+            span {
+                font-weight: 100;
+            }
+        }
+    }
+
+}
