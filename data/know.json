@@ -196,7 +196,7 @@
             "name": "gRPC",
             "level": "Beginner",
             "icon": "/icons/grpc.svg",
-            "text": "when it is necessary to have some HTTP communication between microservices with low latency and performance, gRPC fits even more if it is in Golang, I am still studying and seeing the applications but beforehand I can simply say that it is very fast and standardization"
+            "text": "When it is necessary to have some HTTP communication between microservices with low latency and performance, gRPC fits even more if it is in Golang, I am still studying and seeing the applications but beforehand I can simply say that it is very fast and standardization"
         }
     ]
 }
