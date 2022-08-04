@@ -38,7 +38,7 @@ const Container = () => {
                     `My name is Miguel, I'm ${age} years old, I'm currently studying for a bachelor's degree in Computer Science at Anhembi Morumbi University (UAM), 
                     in addition to being a website and mobile application developer. 
                     I've been studying programming since the end of 2016, I started with Python and soon after I started studying C and PHP, 
-                    however I focused more on Python and at the moment it's the language i like the most as the one I know the most about. 
+                    however I focused more on Python and at the moment it's the language I like the most as the one I know the most about. 
                     But I'm not just stuck with a language, I know others and I know how to work with them as well, such as NodeJS, Go, Flutter, Vue and React.`
                 }
                 title="About"

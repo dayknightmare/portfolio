@@ -1,0 +1,170 @@
+@media only screen and (max-width: 1024px) {
+    div.banner {
+        h1 {
+            font-size: 8rem !important;
+        }
+    }
+
+    div.container {
+        padding: 3rem !important;
+
+        p {
+            font-size: 1.25rem !important;
+        }
+
+        div.content {
+            div.know__items {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+
+            div.langs__items {
+                grid-template-columns: repeat(4, 1fr) !important;
+
+                p {
+                    font-size: 1rem !important;
+
+                    span {
+                        font-size: .7rem !important;
+                    }
+                }
+            }
+        }
+
+        div.project__item {
+            div.project__overlay {
+                padding: 2rem !important;
+            }
+        }
+    }
+
+    div.footer {
+        div.footer__message {
+            font-size: 1.1rem !important;
+        }
+
+        img {
+            width: 3.4rem !important;
+        }
+
+        p {
+            font-size: 1.3rem !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    div.banner {
+        h1 {
+            font-size: 6rem !important;
+        }
+    }
+
+    div.container {
+        padding: 3rem !important;
+
+        p {
+            font-size: 1.125rem !important;
+        }
+
+        h2 {
+            font-size: 3rem !important;
+            margin-bottom: .1rem !important;
+        }
+
+        div.content {
+            div.know__items {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+
+            div.langs__items {
+                grid-template-columns: repeat(3, 1fr) !important;
+
+                div.lang__item  {
+                    height: 15rem !important;
+                }
+
+                img {
+                    width: 4rem !important;
+                }
+
+                p {
+                    font-size: .8rem !important;
+                }
+            }
+        }
+
+        div.project__item {
+            div.project__overlay {
+                padding: 1rem !important;
+    
+                div.project__container__header {
+                    flex-direction: column !important;
+                    justify-content: center !important;
+                    align-items: center !important;
+    
+                    h3 {
+                        margin-left: 0 !important;
+                    }
+                }
+            }
+
+            div.images {
+                max-height: 50vw !important;
+
+                img {
+                    width: 120% !important;
+                }
+            }
+        }
+    }
+
+    div.footer {
+        div.footer__message {
+            font-size: .9rem !important;
+        }
+
+        h3 {
+            font-size: 2rem !important;
+        }
+
+        img {
+            width: 2.5rem !important;
+        }
+
+        p {
+            font-size: 1rem !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    div.banner {
+        h1 {
+            font-size: 4rem !important;
+        }
+    }
+
+    div.container {
+        padding: 2rem !important;
+
+        div.content {
+            div.know__items {
+                grid-template-columns: repeat(1, 1fr) !important;
+            }
+
+            div.langs__items {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+
+        div.project__item {
+            div.images {
+                max-height: 60vw !important;
+
+                img {
+                    width: 150% !important;
+                }
+            }
+        }
+    }
+}
