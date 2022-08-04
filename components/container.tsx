@@ -31,6 +31,14 @@ const Container = () => {
         'tools',
     ]
 
+    const changeKnow = (index: number) => {
+        setActive(index)
+        setActiveLangIndex(0)
+        document.querySelector('#langs_items').scrollIntoView({
+            behavior: 'smooth'
+        })
+    }
+
     return (
         <div className="container">
             <ContainerSection
@@ -56,13 +64,14 @@ const Container = () => {
                 title="Knowledge"
             >
                 <div className="know__items">
-                    <KnowItem active={active == 0} onClickFun={() => { setActive(0); setActiveLangIndex(0) }} icon={'/img/lang.svg'} title='Languages'></KnowItem>
-                    <KnowItem active={active == 1} onClickFun={() => { setActive(1); setActiveLangIndex(0) }} icon={'/img/box.svg'} title='Frameworks'></KnowItem>
-                    <KnowItem active={active == 2} onClickFun={() => { setActive(2); setActiveLangIndex(0) }} icon={'/img/db.svg'} title='Databases'></KnowItem>
-                    <KnowItem active={active == 3} onClickFun={() => { setActive(3); setActiveLangIndex(0) }} icon={'/img/cogs.svg'} title='Tools'></KnowItem>
+                    <KnowItem active={active == 0} onClickFun={() => changeKnow(0)} icon={'/img/lang.svg'} title='Languages'></KnowItem>
+                    <KnowItem active={active == 1} onClickFun={() => changeKnow(1)} icon={'/img/box.svg'} title='Frameworks'></KnowItem>
+                    <KnowItem active={active == 2} onClickFun={() => changeKnow(2)} icon={'/img/db.svg'} title='Databases'></KnowItem>
+                    <KnowItem active={active == 3} onClickFun={() => changeKnow(3)} icon={'/img/cogs.svg'} title='Tools'></KnowItem>
                 </div>
 
                 <br />
+                <i id="langs_items"></i>
 
                 <div className="langs__items">
                     {
