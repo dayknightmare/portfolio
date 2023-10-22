@@ -1,0 +1,246 @@
+{
+    "back": [
+        {
+            "name": "Python",
+            "level": "Advanced",
+            "icon": "/icons/back/python.svg",
+            "text": "This is the language that I have the most affinity and knowledge about, I have been studying Python since 2016 more specifically on the web part with Django, Flask and FastAPI along with WebSockets for the development of APIs and Sites, in addition I use Python to create scripts for automation of basic routines such as Tasks, API data fetchers and among other uses"
+        },
+        {
+            "name": "Node.js",
+            "level": "Advanced",
+            "icon": "/icons/back/nodejs.svg",
+            "text": "Although NodeJS is not a language I will fit it here because of the improvements it brings to JavaScript, in any project that needs a good dependency/package management and that also needs asynchronicity and speed is usually where I believe NodeJS shines. I see this since 2018 when I create my project in Vue"
+        },
+        {
+            "name": "Golang",
+            "level": "Intermediate",
+            "icon": "/icons/back/go.svg",
+            "text": "When I want something extremely performant, there's no doubt I'll choose Go, in fact one of the best languages ever created, designed for speed, I started having contact with Go in early 2020 and I like to use it to create microservices and simple APIs"
+        },
+        {
+            "name": "Dart",
+            "level": "Intermediate",
+            "icon": "/icons/back/dart.svg",
+            "text": "Dart is one of the languages I use more for the framework it has than for the language itself, even so I consider this a good language for OOP, As I said I met Dart through Flutter in 2019 and so far I use it together with Flutter to create my mobile apps"
+        },
+        {
+            "name": "JavaScript",
+            "level": "Advanced",
+            "icon": "/icons/back/javascript.svg",
+            "text": "Today, in any corner of the Web, JS is used because of this fact it is an almost mandatory language for anyone who works with the Web, so since 2017 I have been studying and working with it to create sites both in backend and frotend using JS"
+        },
+        {
+            "name": "TypeScript",
+            "level": "Intermediate",
+            "icon": "/icons/back/typescript.svg",
+            "text": "From 2019 I started to work with TypeScript, the typing that is proposed makes it much easier to understand the functions and architecture of the system in addition to standardizing what is being done which ends up resulting in easier understanding, normally I am using TypeScript more than than JavaScript in my project precisely because of these improvements"
+        },
+        {
+            "name": "Rust",
+            "level": "Beginner",
+            "icon": "/icons/back/rust.svg",
+            "text": "From 2019 I started to work with TypeScript, the typing that is proposed makes it much easier to understand the functions and architecture of the system in addition to standardizing what is being done which ends up resulting in easier understanding, normally I am using TypeScript more than than JavaScript in my project precisely because of these improvements"
+        },
+        {
+            "name": "Swift",
+            "level": "Beginner",
+            "icon": "/icons/back/swift.svg",
+            "text": "From 2019 I started to work with TypeScript, the typing that is proposed makes it much easier to understand the functions and architecture of the system in addition to standardizing what is being done which ends up resulting in easier understanding, normally I am using TypeScript more than than JavaScript in my project precisely because of these improvements"
+        },
+        {
+            "name": "PHP",
+            "level": "Intermediate",
+            "icon": "/icons/back/php.svg",
+            "text": "From 2019 I started to work with TypeScript, the typing that is proposed makes it much easier to understand the functions and architecture of the system in addition to standardizing what is being done which ends up resulting in easier understanding, normally I am using TypeScript more than than JavaScript in my project precisely because of these improvements"
+        }
+    ],
+    "front": [
+        {
+            "name": "Vue",
+            "level": "Advanced",
+            "icon": "/icons/front/vue.svg",
+            "text": "This is the language that I have the most affinity and knowledge about, I have been studying Python since 2016 more specifically on the web part with Django, Flask and FastAPI along with WebSockets for the development of APIs and Sites, in addition I use Python to create scripts for automation of basic routines such as Tasks, API data fetchers and among other uses"
+        },
+        {
+            "name": "React",
+            "level": "Intermediate",
+            "icon": "/icons/front/react.svg",
+            "text": "This is the language that I have the most affinity and knowledge about, I have been studying Python since 2016 more specifically on the web part with Django, Flask and FastAPI along with WebSockets for the development of APIs and Sites, in addition I use Python to create scripts for automation of basic routines such as Tasks, API data fetchers and among other uses"
+        },
+        {
+            "name": "Nuxt",
+            "level": "Advanced",
+            "icon": "/icons/front/nuxt.svg",
+            "text": "This is the language that I have the most affinity and knowledge about, I have been studying Python since 2016 more specifically on the web part with Django, Flask and FastAPI along with WebSockets for the development of APIs and Sites, in addition I use Python to create scripts for automation of basic routines such as Tasks, API data fetchers and among other uses"
+        },
+        {
+            "name": "NextJS",
+            "level": "Intermediate",
+            "icon": "/icons/front/nextjs.svg",
+            "text": "This is the language that I have the most affinity and knowledge about, I have been studying Python since 2016 more specifically on the web part with Django, Flask and FastAPI along with WebSockets for the development of APIs and Sites, in addition I use Python to create scripts for automation of basic routines such as Tasks, API data fetchers and among other uses"
+        },
+        {
+            "name": "HTML",
+            "level": "Advanced",
+            "icon": "/icons/front/html5.svg",
+            "text": "This is the language that I have the most affinity and knowledge about, I have been studying Python since 2016 more specifically on the web part with Django, Flask and FastAPI along with WebSockets for the development of APIs and Sites, in addition I use Python to create scripts for automation of basic routines such as Tasks, API data fetchers and among other uses"
+        },
+        {
+            "name": "CSS",
+            "level": "Advanced",
+            "icon": "/icons/front/css3.svg",
+            "text": "This is the language that I have the most affinity and knowledge about, I have been studying Python since 2016 more specifically on the web part with Django, Flask and FastAPI along with WebSockets for the development of APIs and Sites, in addition I use Python to create scripts for automation of basic routines such as Tasks, API data fetchers and among other uses"
+        },
+        {
+            "name": "Sass",
+            "level": "Intermediate",
+            "icon": "/icons/front/sass.svg",
+            "text": "This is the language that I have the most affinity and knowledge about, I have been studying Python since 2016 more specifically on the web part with Django, Flask and FastAPI along with WebSockets for the development of APIs and Sites, in addition I use Python to create scripts for automation of basic routines such as Tasks, API data fetchers and among other uses"
+        },
+        {
+            "name": "TailWindCSS",
+            "level": "Intermediate",
+            "icon": "/icons/front/tailwindcss.svg",
+            "text": "This is the language that I have the most affinity and knowledge about, I have been studying Python since 2016 more specifically on the web part with Django, Flask and FastAPI along with WebSockets for the development of APIs and Sites, in addition I use Python to create scripts for automation of basic routines such as Tasks, API data fetchers and among other uses"
+        }
+    ],
+    "databases": [
+        {
+            "name": "PostgreSQL",
+            "level": "Advanced",
+            "icon": "/icons/databases/postgresql.svg",
+            "text": "In fact, the relational database I like to use the most, the consistency of the data storage in my opinion surpasses that of MySQL, in addition to being faster, more practical and optimized to use. I've always used it with Django it makes an excellent junction almost every project I have that uses relational databases PostgreSQL is present at least from 2018 onwards"
+        },
+        {
+            "name": "MySQL",
+            "level": "Advanced",
+            "icon": "/icons/databases/mysql.svg",
+            "text": "MySQL (My sequel) was the first bank I contacted at the end of 2017 when I was in technical school. For simple projects I usually prefer to use it, however for larger projects I prefer others. But its version compatible with AWS Aurora is in fact very performatic and resilient"
+        },
+        {
+            "name": "Redis",
+            "level": "Advanced",
+            "icon": "/icons/databases/redis.svg",
+            "text": "It is impossible today to have an online bank without a cache layer, I see Redis as a guardian of the main bank applying a sophisticated and highly performatic cache layer that helps when collecting the same data, in addition to passing information to other simple systems way without needing a complex architecture"
+        },
+        {
+            "name": "MongoDB",
+            "level": "Intermediate",
+            "icon": "/icons/databases/mongodb.svg",
+            "text": "When I want to do something that uses NoSQL and that has a behavior similar to PostgreSQL and that needs to have a malleable structure with elastic scalability (clusters), MongoDB fits right into this need, for the simple fact that its storage in JSON documents facilitates both the search and the the meltability"
+        },
+        {
+            "name": "Apache Druid",
+            "level": "Intermediate",
+            "icon": "/icons/databases/apachedruid.svg",
+            "text": "This is the least I know about I've been studying it since 2020, in fact it's a very performant bank for high volumes of data insertion and selection, I still don't have a project with it, feel free to give me an idea"
+        },
+        {
+            "name": "ScyllaDB",
+            "level": "Beginner",
+            "icon": "/icons/databases/scylladb.svg",
+            "text": "This is the least I know about I've been studying it since 2020, in fact it's a very performant bank for high volumes of data insertion and selection, I still don't have a project with it, feel free to give me an idea"
+        },
+        {
+            "name": "Cassandra",
+            "level": "Beginner",
+            "icon": "/icons/databases/apachecassandra.svg",
+            "text": "This is the least I know about I've been studying it since 2020, in fact it's a very performant bank for high volumes of data insertion and selection, I still don't have a project with it, feel free to give me an idea"
+        }
+    ],
+    "tools": [
+        {
+            "name": "Git",
+            "level": "Advanced",
+            "icon": "/icons/tools/git.svg",
+            "text": "Git today is the basics of any project, it is necessary to have versioning, control the actions of programmers within the project and the like. Luckily we have Git for all of that."
+        },
+        {
+            "name": "Docker",
+            "level": "Intermediate",
+            "icon": "/icons/tools/docker.svg",
+            "text": "As Docker makes everything easier, having the possibility to isolate the raw dependencies (languages, banks, simple infrastructure) of the projects in a mini virtual machine so that it can run on any machine regardless of the OS on it is sensational, I've been working with docker since mid-2019 and today about 80% (practically all private) of my projects contain docker"
+        },
+        {
+            "name": "Figma",
+            "level": "Intermediate",
+            "icon": "/icons/tools/figma.svg",
+            "text": "The projects that involve screens, interface images and the like, figma is my silver bullet, I can prototype them to get a preview of how each part will look, including this portfolio was prototyped in Figma, I hope you liked it"
+        },
+        {
+            "name": "AndroidStudio",
+            "level": "Intermediate",
+            "icon": "/icons/tools/androidstudio.svg",
+            "text": "Linux, without a doubt when I changed from Windows to Linux (in this case it was Ubuntu) I improved a lot in terms of programming, Linux exposes you to technology, forces you to look for new things, new ways that are not comfortable, this is super essential for any developer. I like Ubuntu, Pop_OS and Mint, but they are all very good"
+        },
+        {
+            "name": "XCode",
+            "level": "Intermediate",
+            "icon": "/icons/tools/xcode.svg",
+            "text": "Linux, without a doubt when I changed from Windows to Linux (in this case it was Ubuntu) I improved a lot in terms of programming, Linux exposes you to technology, forces you to look for new things, new ways that are not comfortable, this is super essential for any developer. I like Ubuntu, Pop_OS and Mint, but they are all very good"
+        },
+        {
+            "name": "Postman",
+            "level": "Intermediate",
+            "icon": "/icons/tools/postman.svg",
+            "text": "Linux, without a doubt when I changed from Windows to Linux (in this case it was Ubuntu) I improved a lot in terms of programming, Linux exposes you to technology, forces you to look for new things, new ways that are not comfortable, this is super essential for any developer. I like Ubuntu, Pop_OS and Mint, but they are all very good"
+        },
+        {
+            "name": "BullMQ",
+            "level": "Intermediate",
+            "icon": "/icons/tools/bullmq.svg",
+            "text": "Bull is a queue scheme that I learned in my professional experiences, based on Redis, Bull is basically an SQS but opensource is very performative with differences between tasks that are being executed that give errors and those that are finished, which provide us with a very interesting asynchronicity of processes"
+        },
+        {
+            "name": "gRPC",
+            "level": "Beginner",
+            "icon": "/icons/tools/grpc.svg",
+            "text": "When it is necessary to have some HTTP communication between microservices with low latency and performance, gRPC fits even more if it is in Golang, I am still studying and seeing the applications but beforehand I can simply say that it is very fast and standardization"
+        },
+        {
+            "name": "Linux",
+            "level": "Intermediate",
+            "icon": "/icons/tools/linux.svg",
+            "text": "Linux, without a doubt when I changed from Windows to Linux (in this case it was Ubuntu) I improved a lot in terms of programming, Linux exposes you to technology, forces you to look for new things, new ways that are not comfortable, this is super essential for any developer. I like Ubuntu, Pop_OS and Mint, but they are all very good"
+        },
+        {
+            "name": "MacOS",
+            "level": "Intermediate",
+            "icon": "/icons/tools/macos.svg",
+            "text": "Linux, without a doubt when I changed from Windows to Linux (in this case it was Ubuntu) I improved a lot in terms of programming, Linux exposes you to technology, forces you to look for new things, new ways that are not comfortable, this is super essential for any developer. I like Ubuntu, Pop_OS and Mint, but they are all very good"
+        }
+    ],
+    "infra": [
+        {
+            "name": "AWS",
+            "level": "Advanced",
+            "icon": "/icons/infra/amazonaws.svg",
+            "text": "Git today is the basics of any project, it is necessary to have versioning, control the actions of programmers within the project and the like. Luckily we have Git for all of that."
+        },
+        {
+            "name": "GCP",
+            "level": "Intermediate",
+            "icon": "/icons/infra/googlecloud.svg",
+            "text": "Git today is the basics of any project, it is necessary to have versioning, control the actions of programmers within the project and the like. Luckily we have Git for all of that."
+        },
+        {
+            "name": "Digital Ocean",
+            "level": "Advanced",
+            "icon": "/icons/infra/digitalocean.svg",
+            "text": "Git today is the basics of any project, it is necessary to have versioning, control the actions of programmers within the project and the like. Luckily we have Git for all of that."
+        },
+        {
+            "name": "Nginx",
+            "level": "Advanced",
+            "icon": "/icons/infra/nginx.svg",
+            "text": "Git today is the basics of any project, it is necessary to have versioning, control the actions of programmers within the project and the like. Luckily we have Git for all of that."
+        },
+        {
+            "name": "Sentry",
+            "level": "Beginner",
+            "icon": "/icons/infra/sentry.svg",
+            "text": "Git today is the basics of any project, it is necessary to have versioning, control the actions of programmers within the project and the like. Luckily we have Git for all of that."
+        }
+    ]
+}
