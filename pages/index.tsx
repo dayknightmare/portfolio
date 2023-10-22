@@ -8,7 +8,6 @@ import knows from '../data/know.json'
 import BoxItemSecondary from '../components/boxItemSecondary'
 import Image from 'next/image'
 import Phrases from '../components/phrases'
-import Link from 'next/link'
 import ProjectItem from '../components/projectItem'
 
 const Home: NextPage = () => {
@@ -56,12 +55,12 @@ const Home: NextPage = () => {
         <ProjectItem
           title="Vupy"
           images={[
-            '/imgs/vupy/mainpage.png',
-            '/imgs/vupy/chat.png',
-            '/imgs/vupy/edit.png',
-            '/imgs/vupy/posts.png',
-            '/imgs/vupy/profile.png',
-            '/imgs/vupy/theme.png',
+            '/portfolio/imgs/vupy/mainpage.png',
+            '/portfolio/imgs/vupy/chat.png',
+            '/portfolio/imgs/vupy/edit.png',
+            '/portfolio/imgs/vupy/posts.png',
+            '/portfolio/imgs/vupy/profile.png',
+            '/portfolio/imgs/vupy/theme.png',
           ]}
           links={[
             {link: 'https://socialvupy.com', name: 'Vupy'},
@@ -78,11 +77,11 @@ const Home: NextPage = () => {
         <ProjectItem
           title="Unides"
           images={[
-            '/imgs/unides/a1.png',
-            '/imgs/unides/a2.png',
-            '/imgs/unides/a3.png',
-            '/imgs/unides/a4.png',
-            '/imgs/unides/a5.png',
+            '/portfolio/imgs/unides/a1.png',
+            '/portfolio/imgs/unides/a2.png',
+            '/portfolio/imgs/unides/a3.png',
+            '/portfolio/imgs/unides/a4.png',
+            '/portfolio/imgs/unides/a5.png',
           ]}
         >
           To manage the NASA hackathon in my city, it was common to use WhatsApp to talk to teams and
@@ -97,9 +96,9 @@ const Home: NextPage = () => {
         <ProjectItem
           title="Druid Exporter"
           images={[
-            '/imgs/druid/img1.png',
-            '/imgs/druid/img2.png',
-            '/imgs/druid/img3.png',
+            '/portfolio/imgs/druid/img1.png',
+            '/portfolio/imgs/druid/img2.png',
+            '/portfolio/imgs/druid/img3.png',
           ]}
           links={
             [
@@ -136,16 +135,16 @@ const Home: NextPage = () => {
       <ContainerSection title="Contact" className="bg__contact">
         <div className="flex items-center justify-evenly contact__icons">
           <div className="contact tt" title="LinkedIn">
-            <Image onClick={() => openLink("https://www.linkedin.com/in/miguelvcolombo")} className="cursor-pointer max-[768px]:w-20 max-[425px]:w-12" src="/icons/linkedin.svg" title="LinkedIn" width={100} height={100} alt="icon"></Image>
+            <Image onClick={() => openLink("https://www.linkedin.com/in/miguelvcolombo")} className="cursor-pointer max-[768px]:w-20 max-[425px]:w-12" src="/portfolio/icons/linkedin.svg" title="LinkedIn" width={100} height={100} alt="icon"></Image>
           </div>
           <div className="contact tt" title="Instagram">
-            <Image onClick={() => openLink("https://www.instagram.com/miguel.vcolombo/")} className="cursor-pointer max-[768px]:w-20 max-[425px]:w-12" title="Instagram" src="/icons/instagram.svg" width={100} height={100} alt="icon"></Image>
+            <Image onClick={() => openLink("https://www.instagram.com/miguel.vcolombo/")} className="cursor-pointer max-[768px]:w-20 max-[425px]:w-12" title="Instagram" src="/portfolio/icons/instagram.svg" width={100} height={100} alt="icon"></Image>
           </div>
           <div className="contact tt" title="GitHub">
-            <Image onClick={() => openLink("https://github.com/dayknightmare")} className="cursor-pointer max-[768px]:w-20 max-[425px]:w-12" title="GitHub" src="/icons/github.svg" width={100} height={100} alt="icon"></Image>
+            <Image onClick={() => openLink("https://github.com/dayknightmare")} className="cursor-pointer max-[768px]:w-20 max-[425px]:w-12" title="GitHub" src="/portfolio/icons/github.svg" width={100} height={100} alt="icon"></Image>
           </div>
           <div className="contact tt" title="X">
-            <Image onClick={() => openLink("https://twitter.com/MiguelVColombo")} className="cursor-pointer max-[768px]:w-20 max-[425px]:w-12" title="X" src="/icons/x-2.svg" width={100} height={100} alt="icon"></Image>
+            <Image onClick={() => openLink("https://twitter.com/MiguelVColombo")} className="cursor-pointer max-[768px]:w-20 max-[425px]:w-12" title="X" src="/portfolio/icons/x-2.svg" width={100} height={100} alt="icon"></Image>
           </div>
         </div>
       </ContainerSection>
