@@ -115,11 +115,11 @@ const Home: NextPage = () => {
       </ContainerSection>
       <ContainerSection title="Skills">
         <div className="flex min-[769px]:flex-nowrap max-[768px]:flex-wrap gap-12 w-full justify-items-center max-[1024px]:gap-8 max-[768px]:gap-6">
-          <BoxItem onClick={() => setActive(0)} active={active == 0} img="/icons/infra.svg" title='Infra'></BoxItem>
-          <BoxItem onClick={() => setActive(1)} active={active == 1} img="/icons/frontend.svg" title='Frontend'></BoxItem>
-          <BoxItem onClick={() => setActive(3)} active={active == 3} img="/icons/backend.svg" title='Languages'></BoxItem>
-          <BoxItem onClick={() => setActive(2)} active={active == 2} img="/icons/tools.svg" title='Tools'></BoxItem>
-          <BoxItem onClick={() => setActive(4)} active={active == 4} img="/icons/db.svg" title='Database'></BoxItem>
+          <BoxItem onClick={() => setActive(0)} active={active == 0} img="/portfolio/icons/infra.svg" title='Infra'></BoxItem>
+          <BoxItem onClick={() => setActive(1)} active={active == 1} img="/portfolio/icons/frontend.svg" title='Frontend'></BoxItem>
+          <BoxItem onClick={() => setActive(3)} active={active == 3} img="/portfolio/icons/backend.svg" title='Languages'></BoxItem>
+          <BoxItem onClick={() => setActive(2)} active={active == 2} img="/portfolio/icons/tools.svg" title='Tools'></BoxItem>
+          <BoxItem onClick={() => setActive(4)} active={active == 4} img="/portfolio/icons/db.svg" title='Database'></BoxItem>
         </div>
         <br />
         <div className="skill__items grid grid-cols-10 gap-12 w-full justify-items-center">
