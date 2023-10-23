@@ -6,7 +6,7 @@ const ContainerSection: NextPage<{
     className?: string,
 }> = ({ children, title, className }) => {
     return (
-        <section className={"w-full p-20 max-[425px]:p-10 " + (className || '')}>
+        <section className={"w-full p-20 max-[520px]:p-10 " + (className || '')}>
             <h2 className="text-6xl font-light text-white">{title}</h2>
             <br />
             <br />

@@ -13,7 +13,7 @@ const ProjectItem: NextPage<{
         <h3 className="text-5xl font-light">{title}</h3>
         <br />
         <br />
-        <span className="text-3xl font-thin leading-relaxed max-[768px]:text-2xl max-[425px]:text-xl">
+        <span className="text-3xl font-thin leading-relaxed max-[768px]:text-2xl max-[520px]:text-xl">
           {children}
         </span>
         {
@@ -36,7 +36,7 @@ const ProjectItem: NextPage<{
           </>
         }
         <br /><br />
-        <div className="grid grid-cols-4 gap-5 max-[1024px]:grid-cols-3 max-[768px]:grid-cols-2 max-[425px]:grid-cols-1">
+        <div className="grid grid-cols-4 gap-5 max-[1024px]:grid-cols-3 max-[768px]:grid-cols-2 max-[520px]:grid-cols-1">
           { images.map(e =>
             <div key={e} className="project__image overflow-hidden rounded-md h-96 border border-main/30 max-[1024px]:h-80" style={{backgroundImage: `url(${e})`}}></div>
           ) }

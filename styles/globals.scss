@@ -144,7 +144,7 @@ div.links {
 @media only screen and (max-width: 1024px) {
   div.banner {
     span {
-      font-size: 5rem !important;
+      font-size: 4.75rem !important;
     }
   }
 
@@ -154,6 +154,12 @@ div.links {
 }
 
 @media only screen and (max-width: 768px) {
+  div.banner {
+    span {
+      font-size: 4rem !important;
+    }
+  }
+
   .skill__items {
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   }
@@ -176,7 +182,7 @@ div.links {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 520px) {
   div.banner {
     padding: 1rem !important;
 

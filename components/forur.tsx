@@ -66,15 +66,15 @@ const ForUr: NextPage = () => {
             <div className="flex justify-center">
                 <div className="flex justify-center flex-col relative items-center forur">
                     <div className="flex flex-col justify-between w-full">
-                        <span className="font-thin w-full block text-4xl text-right text-hidden max-[425px]:text-center max-[425px]:mb-4">{ words.current[0] }</span>
-                        <span className="font-thin w-full block text-4xl text-right text-hidden max-[425px]:text-center max-[425px]:mb-4">{ words.current[1] }</span>
+                        <span className="font-thin w-full block text-4xl text-right text-hidden max-[520px]:text-center max-[520px]:mb-4">{ words.current[0] }</span>
+                        <span className="font-thin w-full block text-4xl text-right text-hidden max-[520px]:text-center max-[520px]:mb-4">{ words.current[1] }</span>
                     </div>
-                    <p className="text-9xl font-thin max-[1024px]:text-7xl max-[425px]:text-5xl max-[425px]:text-center">
+                    <p className="text-9xl font-thin max-[1024px]:text-7xl max-[520px]:text-5xl max-[520px]:text-center">
                         For ur <span className="text-main">{ currentWord }</span>
                     </p>
                     <div className="flex flex-col justify-between w-full">
-                        <span className="font-thin w-full block text-4xl text-right text-hidden max-[425px]:text-center max-[425px]:mt-4">{ words.current[3] }</span>
-                        <span className="font-thin w-full block text-4xl text-right text-hidden max-[425px]:text-center max-[425px]:mt-4">{ words.current[4] }</span>
+                        <span className="font-thin w-full block text-4xl text-right text-hidden max-[520px]:text-center max-[520px]:mt-4">{ words.current[3] }</span>
+                        <span className="font-thin w-full block text-4xl text-right text-hidden max-[520px]:text-center max-[520px]:mt-4">{ words.current[4] }</span>
                     </div>
                 </div>
             </div>

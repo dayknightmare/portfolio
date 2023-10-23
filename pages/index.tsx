@@ -9,6 +9,8 @@ import BoxItemSecondary from '../components/boxItemSecondary'
 import Image from 'next/image'
 import Phrases from '../components/phrases'
 import ProjectItem from '../components/projectItem'
+import Head from 'next/head'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   const [active, setActive] = useState(3)
@@ -27,25 +29,45 @@ const Home: NextPage = () => {
 
   return (
     <>
+      <Head>
+        <title>Portfolio | Miguel Vieira Colombo</title>
+      </Head>
       <Banner></Banner>
       <ForUr />
       <ContainerSection title="About">
-        <span className="text-3xl font-thin leading-relaxed max-[768px]:text-2xl max-[425px]:text-xl">
-            Hello there! I&apos;m Miguel, a skilled developer with a Bachelor&apos;s
-            degree in Computer Science from Universidade Anhembi Morumbi.
-            I possess extensive experience in various technologies, including
-            Python, NodeJS, Go, Flutter, Apache Druid, Apache Superset, and more.
-            Presently, I focus on crafting web platforms, mobile applications,
-            and data pipelines. My goal is to consistently deliver technical
-            excellence in my projects, offering top-notch solutions and ensuring
-            exceptional quality in all my projects.
+        <span className="text-3xl font-thin leading-relaxed max-[768px]:text-2xl max-[520px]:text-xl">
+          Hello there! I&apos;m Miguel, a skilled developer with a Bachelor&apos;s
+          degree in Computer Science from Universidade Anhembi Morumbi.
+          I possess extensive experience in various technologies, including
+          Python, NodeJS, Go, Flutter, Apache Druid, Apache Superset, and more.
+          Presently, I focus on crafting web platforms, mobile applications,
+          and data pipelines. My goal is to consistently deliver technical
+          excellence in my projects, offering top-notch solutions and ensuring
+          exceptional quality in all my projects.
         </span>
         <br />
         <br />
-        <span className="text-3xl font-thin leading-relaxed max-[768px]:text-2xl max-[425px]:text-xl">
-            I am the founder of Social Vupy Network, a social network that
-            focuses on giving users greater autonomy, freedom and personalization
-            regarding content, social image, privacy and security.
+        <span className="text-3xl font-thin leading-relaxed max-[768px]:text-2xl max-[520px]:text-xl">
+          I am the founder of the Social Vupy Network, a social network that stands
+          out for providing users with a greater sense of autonomy, freedom, and
+          customization. With a simplified and intuitive approach, it allows users to
+          control their content, social image, privacy, and security without
+          overwhelming the interface. Furthermore, we prioritize the prevention of
+          addictive triggers while simultaneously delivering real-time information,
+          ensuring a balanced and healthy user experience.
+        </span>
+        <br />
+        <br />
+        <span className="text-3xl font-thin leading-relaxed max-[768px]:text-2xl max-[520px]:text-xl">
+          Furthermore, I have the honor of being an open-source contributor to the
+          <Link href={'https://github.com/not-empty'} passHref>Not Empty Free Software Foundation</Link>
+          , an organization dedicated to providing the
+          developer community with a resource-rich ecosystem. This includes a
+          comprehensive set of tools, SDKs, frameworks, Docker images, utilities,
+          and other components aimed at simplifying and speeding up the process of
+          creating new applications. Through our collaborative efforts, we are committed
+          to strengthening the developer community and promoting the dissemination of
+          open-source solutions.
         </span>
       </ContainerSection>
       <br />
@@ -135,16 +157,16 @@ const Home: NextPage = () => {
       <ContainerSection title="Contact" className="bg__contact">
         <div className="flex items-center justify-evenly contact__icons">
           <div className="contact tt" title="LinkedIn">
-            <Image onClick={() => openLink("https://www.linkedin.com/in/miguelvcolombo")} className="cursor-pointer max-[768px]:w-20 max-[425px]:w-12" src="/portfolio/icons/linkedin.svg" title="LinkedIn" width={100} height={100} alt="icon"></Image>
+            <Image onClick={() => openLink("https://www.linkedin.com/in/miguelvcolombo")} className="cursor-pointer max-[768px]:w-20 max-[520px]:w-12" src="/portfolio/icons/linkedin.svg" title="LinkedIn" width={100} height={100} alt="icon"></Image>
           </div>
           <div className="contact tt" title="Instagram">
-            <Image onClick={() => openLink("https://www.instagram.com/miguel.vcolombo/")} className="cursor-pointer max-[768px]:w-20 max-[425px]:w-12" title="Instagram" src="/portfolio/icons/instagram.svg" width={100} height={100} alt="icon"></Image>
+            <Image onClick={() => openLink("https://www.instagram.com/miguel.vcolombo/")} className="cursor-pointer max-[768px]:w-20 max-[520px]:w-12" title="Instagram" src="/portfolio/icons/instagram.svg" width={100} height={100} alt="icon"></Image>
           </div>
           <div className="contact tt" title="GitHub">
-            <Image onClick={() => openLink("https://github.com/dayknightmare")} className="cursor-pointer max-[768px]:w-20 max-[425px]:w-12" title="GitHub" src="/portfolio/icons/github.svg" width={100} height={100} alt="icon"></Image>
+            <Image onClick={() => openLink("https://github.com/dayknightmare")} className="cursor-pointer max-[768px]:w-20 max-[520px]:w-12" title="GitHub" src="/portfolio/icons/github.svg" width={100} height={100} alt="icon"></Image>
           </div>
           <div className="contact tt" title="X">
-            <Image onClick={() => openLink("https://twitter.com/MiguelVColombo")} className="cursor-pointer max-[768px]:w-20 max-[425px]:w-12" title="X" src="/portfolio/icons/x-2.svg" width={100} height={100} alt="icon"></Image>
+            <Image onClick={() => openLink("https://twitter.com/MiguelVColombo")} className="cursor-pointer max-[768px]:w-20 max-[520px]:w-12" title="X" src="/portfolio/icons/x-2.svg" width={100} height={100} alt="icon"></Image>
           </div>
         </div>
       </ContainerSection>
