@@ -6,8 +6,9 @@ const ProjectItem: NextPage<{
     children: React.ReactNode,
     title: string,
     images: string[],
-    links?: {name: string, link: string}[]
-}> = ({ title, children, images, links }) => {
+    showModalImage: (img: string) => void,
+    links?: {name: string, link: string}[],
+}> = ({ title, children, images, links, showModalImage }) => {
     return <>
       <div className="border-l-4 border-main pl-10 py-6 mb-12 max-[768px]:pl-5">
         <h3 className="text-5xl font-light">{title}</h3>
@@ -38,7 +39,7 @@ const ProjectItem: NextPage<{
         <br /><br />
         <div className="grid grid-cols-4 gap-5 max-[1024px]:grid-cols-3 max-[768px]:grid-cols-2 max-[520px]:grid-cols-1">
           { images.map(e =>
-            <div key={e} className="project__image overflow-hidden rounded-md h-96 border border-main/30 max-[1024px]:h-80" style={{backgroundImage: `url(${e})`}}></div>
+            <div onClick={() => showModalImage(e)} key={e} className="project__image overflow-hidden rounded-md h-96 border border-main/30 max-[1024px]:h-80 cursor-pointer" style={{backgroundImage: `url(${e})`}}></div>
           ) }
         </div>
       </div>

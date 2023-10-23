@@ -11,6 +11,7 @@ import Phrases from '../components/phrases'
 import ProjectItem from '../components/projectItem'
 import Head from 'next/head'
 import Link from 'next/link'
+import ImageModal from '../components/imageModal'
 
 const Home: NextPage = () => {
   const metaDescription = "Hello there! I'm Miguel, a skilled developer with a " +
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
     "solutions and ensuring exceptional quality in all my projects."
 
   const [active, setActive] = useState(3)
+  const [img, setImage] = useState('')
 
   const knowsMapped: Record<number, keyof typeof knows> = {
     0: "infra",
@@ -35,20 +37,31 @@ const Home: NextPage = () => {
     window.open(link, '_blank')
   }
 
+  const showModalImage = (img: string): void => {
+    setImage(img)
+    document.querySelector(".image__modal")?.classList.add('flex')
+    document.querySelector(".image__modal")?.classList.remove('hidden')
+  }
+
   return (
     <>
       <Head>
         <title>Portfolio | Miguel Vieira Colombo</title>
-        <meta property="og:title" content="Portfolio | Miguel Vieira Colombo" />
-        <meta property="og:image" content="https://dayknightmare.github.io/portfolio/imgs/preview.png" />
-        <meta property="og:description" content={metaDescription} />
-        <meta property="og:url" content="https://dayknightmare.github.io/portfolio/" />
+        <meta name="title" content="Portfolio | Miguel Vieira Colombo" />
+        <meta name="description" content={metaDescription} />
+
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dayknightmare.github.io/portfolio/" />
+        <meta property="og:title" content="Portfolio | Miguel Vieira Colombo" />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content="https://dayknightmare.github.io/portfolio/imgs/preview.png" />
+
         <meta name="twitter:title" content="Portfolio | Miguel Vieira Colombo" />
         <meta name="twitter:description" content={metaDescription} />
         <meta name="twitter:image" content="https://dayknightmare.github.io/portfolio/imgs/preview.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      <ImageModal img={img}></ImageModal>
       <Banner></Banner>
       <ForUr />
       <ContainerSection title="About">
@@ -106,6 +119,7 @@ const Home: NextPage = () => {
             {link: 'https://www.linkedin.com/company/vupy-social-networking', name: 'LinkedIn'},
             {link: 'https://github.com/Vupy', name: 'Github'},
           ]}
+          showModalImage={showModalImage}
         >
           This project is the creation of a social network that aims to bring greater autonomy,
           customization and freedom to users, for that, tools are created that help you to have
@@ -122,6 +136,7 @@ const Home: NextPage = () => {
             '/portfolio/imgs/unides/a4.png',
             '/portfolio/imgs/unides/a5.png',
           ]}
+          showModalImage={showModalImage}
         >
           To manage the NASA hackathon in my city, it was common to use WhatsApp to talk to teams and
           mentors, but this created numerous communication problems, so we thought about developing a
@@ -144,6 +159,7 @@ const Home: NextPage = () => {
               { link: 'https://github.com/not-empty/druid-exporter', name: 'GitHub' }
             ]
           }
+          showModalImage={showModalImage}
         >
           An Apache Druid cluster exports several essential metrics for monitoring and
           scalability, which are very important. Thinking of a way to collect these metrics,

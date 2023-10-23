@@ -105,6 +105,21 @@ div.links {
   }
 }
 
+.image__modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(7, 11, 18, 0.767);
+  position: fixed;
+  z-index: 500;
+  left: 0;
+  top: 0;
+
+  .modal__hero {
+    width: 90%;
+    height: 90%;
+  }
+}
+
 @media print {
   body {
     zoom: 70%;
