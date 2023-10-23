@@ -13,6 +13,14 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 const Home: NextPage = () => {
+  const metaDescription = "Hello there! I'm Miguel, a skilled developer with a " +
+    "Bachelor's degree in Computer Science from Universidade Anhembi Morumbi. " +
+    "I possess extensive experience in various technologies, including Python, " +
+    "NodeJS, Go, Flutter, Apache Druid, Apache Superset, and more. Presently, I focus " +
+    "on crafting web platforms, mobile applications, and data pipelines. My goal is " +
+    "to consistently deliver technical excellence in my projects, offering top-notch " +
+    "solutions and ensuring exceptional quality in all my projects."
+
   const [active, setActive] = useState(3)
 
   const knowsMapped: Record<number, keyof typeof knows> = {
@@ -31,6 +39,15 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Portfolio | Miguel Vieira Colombo</title>
+        <meta property="og:title" content="Portfolio | Miguel Vieira Colombo" />
+        <meta property="og:image" content="https://dayknightmare.github.io/portfolio/imgs/preview.png" />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:url" content="https://dayknightmare.github.io/portfolio/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="Portfolio | Miguel Vieira Colombo" />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:image" content="https://dayknightmare.github.io/portfolio/imgs/preview.png" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Banner></Banner>
       <ForUr />

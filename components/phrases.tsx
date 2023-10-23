@@ -11,7 +11,6 @@ const Phrases: NextPage = () => {
         'Sagisu Shiro': 'Through sacrifice, children can play in a world without a care',
         'Balroop Singh': 'Self-judgment clouds our minds with inescapable indictments.',
         'Belladonna': 'I praise visiting warriors, who challenge the monster called thyself',
-        'L. Lawliet': 'Lying monsters are a real nuisance: They are much more cunning than others. They pose as humans even though they have no understanding of the human heart; they eat even though they\'ve never experienced hunger; they study even though they have no interest in academics; they seek friendship even though they do not know how to love. If I were to encounter such monsters, I would likely be eaten by them... because in truth, I am that monster'
     }
 
     const [currentPhrase, setCurrentPhrase] = useState('L. Lawliet')
