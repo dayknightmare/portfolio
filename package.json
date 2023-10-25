@@ -13,7 +13,7 @@
     "push": "git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
-    "next": "13.4.8",
+    "next": "13.5.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.63.6"
