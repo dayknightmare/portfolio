@@ -1,0 +1,6 @@
+@use '../../app/theme.scss' as *;
+
+::selection {
+    color: white;
+    background-color: $primary-color;
+}

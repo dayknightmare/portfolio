@@ -1,0 +1,41 @@
+@use "../../app/theme.scss" as *;
+
+.red-purity {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+    span {
+        font-size: 5rem;
+        color: $background-color;
+        position: relative;
+        text-shadow:
+            -1px -1px 0 $primary-color,
+            1px -1px 0 $primary-color,
+            -1px 1px 0 $primary-color,
+            1px 1px 0 $primary-color,
+            0 0 150px $primary-color;
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 2rem;
+            height: 2rem;
+            background-color: $primary-color;
+            transform: rotate(45deg) translate(-50%, -50%);
+            left: -4rem;
+            top: 55%;
+            border-radius: 5px;
+        }
+
+        &::after {
+            left: auto;
+            right: -4rem;
+            top: 60%;
+        }
+    }
+}

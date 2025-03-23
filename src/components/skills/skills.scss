@@ -1,0 +1,48 @@
+@use "../../app/theme.scss" as *;
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: min-content;
+    gap: 1rem;
+    transform: rotate(45deg) translate(100%, -50%);
+    margin-top: -2rem;
+
+    .square-item {
+        width: 10rem;
+        height: 10rem;
+        border: 2px solid $primary-color;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &.none {
+            border: none;
+            cursor: initial;
+
+            span {
+                color: #646464;
+                font-size: 2rem;
+                font-weight: lighter;
+                text-shadow: 0 0 50px $primary-color;
+                letter-spacing: 1ch;
+            }
+        }
+
+        &.active {
+            background-color: $secondary-color;
+            transform: scale(1.3);
+        }
+
+        span {
+            transform: rotate(-45deg);
+            color: $primary-color;
+            font-size: 1.7rem;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}

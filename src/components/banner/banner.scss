@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+div.banner {
+    background-image: url('/banner.svg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: calc(100vh + 5rem);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+
+    h1 {
+        font-size: 4rem;
+        font-weight: lighter;
+        line-height: 2;
+
+        .red-text {
+            font-weight: 600;
+        }
+    }
+
+    .hollow {
+        position: absolute;
+        right: 1rem;
+        bottom: 6.5rem;
+
+        span {
+            font-family: "Gloria Hallelujah", cursive !important;
+            font-size: 1.5rem;
+        }
+    }
+}
