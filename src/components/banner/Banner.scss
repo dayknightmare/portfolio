@@ -1,4 +1,5 @@
 @use '../../app/theme' as *;
+@use './Banner.responsive';
 
 .banner {
   width: 100vw;
@@ -33,8 +34,8 @@
 
   .badges {
     position: absolute;
-    left: 3vw;
-    bottom: 6vw;
+    left: 3rem;
+    bottom: 9rem;
 
     .badge {
       font-size: 48;

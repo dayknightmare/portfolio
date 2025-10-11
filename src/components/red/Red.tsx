@@ -11,10 +11,11 @@ export const Red = () => {
     const elemRect = document.querySelector('.red-container')?.getBoundingClientRect();
     const offset = (elemRect!.top - bodyRect.top) - baseSize;
     const offsetEnd = (elemRect!.top - bodyRect.top) + elemRect!.height - baseSize;
+    const baseLine = Math.max(window.innerWidth, window.innerHeight) ;
 
     const scroll = () => {
-      const newSize = (window.innerWidth / 1.45) * ((window.scrollY - offset)  * 100 / (offsetEnd - offset)) / 100;
-      setSize(Math.min(Math.max(newSize, 0), window.innerWidth));
+      const newSize = (baseLine) * ((window.scrollY - offset)  * 100 / (offsetEnd - offset)) / 100;
+      setSize(Math.min(Math.max(newSize, 0), baseLine));
     };
 
     window.addEventListener('scroll', scroll);
@@ -25,9 +26,9 @@ export const Red = () => {
   }, []);
 
   return (
-    <div className="red-container" style={{ width: '100vw', height: '100vh' }}>
-      <svg className='sticky top-0 w-full' viewBox="0 0 1728 1117" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="864" cy="1017" r={size} fill={'#101010'}/>
+    <div className="red-container">
+      <svg className='sticky top-0 w-full' viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="500" cy="1000" r={size} fill={'#101010'}/>
       </svg>
     </div>
   );

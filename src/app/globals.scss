@@ -1,5 +1,6 @@
 @use "tailwindcss";
 @use "./theme" as *;
+@use './responsive';
 
 .tt {
   position: relative;

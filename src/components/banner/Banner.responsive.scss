@@ -1,0 +1,57 @@
+@media (max-width: 767px) {
+  .banner {
+    .interpolate {
+      p {
+        font-size: 140px !important;
+
+        &.japanese {
+          font-size: 120px !important;
+        }
+      }
+    }
+
+    p.sub {
+      font-size: 20px !important;
+    }
+
+    .badges {
+      left: 50% !important;
+      bottom: 6rem;
+
+      .badge {
+        transform: translateX(-50%) !important;
+        font-size: 36px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+    .banner {
+    .interpolate {
+      p {
+        font-size: 120px !important;
+
+        &.japanese {
+          font-size: 100px !important;
+          margin-top: -2rem !important;
+        }
+      }
+    }
+
+    p.sub {
+      font-size: 18px !important;
+      margin-top: -3rem !important;
+    }
+
+    .badges {
+      left: 50% !important;
+      bottom: 6rem;
+
+      .badge {
+        transform: translateX(-50%) !important;
+        font-size: 36px !important;
+      }
+    }
+  }
+}

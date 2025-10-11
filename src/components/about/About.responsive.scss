@@ -1,0 +1,157 @@
+@media (max-width: 1280px) {
+  .about {
+    .container {
+      svg {
+        width: 7rem !important;
+        margin-top: -1rem;
+      }
+
+      .title-container {
+        .main-title {
+          font-size: 115px !important;
+        }
+        .sub-title {
+          font-size: 48px !important;
+        }
+      }
+
+      .body-container {
+        margin-top: 3rem !important;
+
+        p {
+          font-size: 30px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .about {
+    .neo {
+      span {
+        font-size: 60px !important;
+      }
+    }
+
+    .container {
+      .title-container {
+        .main-title {
+          font-size: 105px !important;
+        }
+        .sub-title {
+          font-size: 46px !important;
+        }
+      }
+
+      .body-container {
+        p {
+          font-size: 28px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    flex-direction: column !important;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    padding-bottom: 10rem !important;
+    gap: 1.5rem !important;
+
+    .neo {
+      width:  100% !important;
+      min-height: 5rem !important;
+      border-right: 3px solid #000;
+
+      span {
+        text-align: center;
+        width: 100% !important;
+        font-size: 55px !important;
+      }
+    }
+
+    .for-health {
+      text-align: center !important;
+      width: 100% !important;
+      right: 50% !important;
+      transform: translateX(50%) !important;
+      font-size: 24px !important;
+    }
+
+    .container {
+      svg {
+        width: 5.5rem !important;
+        margin-top: -1.5rem;
+      }
+
+      .body-container {
+        p {
+          font-size: 26px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .about {
+    .neo {
+      span {
+        width: 100% !important;
+        font-size: 45px !important;
+      }
+    }
+
+    .container {
+      svg {
+        width: 5rem !important;
+        margin-top: -2rem;
+      }
+
+      .title-container {
+        .main-title {
+          font-size: 80px !important;
+        }
+        .sub-title {
+          font-size: 36px !important;
+        }
+      }
+
+      .body-container {
+        p {
+          font-size: 26px !important;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  .about {
+    .container {
+      svg {
+        width: 4.5rem !important;
+        margin-top: -2.5rem;
+      }
+
+      .title-container {
+        .main-title {
+          font-size: 64px !important;
+        }
+        .sub-title {
+          font-size: 32px !important;
+        }
+      }
+
+      .body-container {
+        p {
+          font-size: 24px !important;
+        }
+      }
+    }
+  }
+}

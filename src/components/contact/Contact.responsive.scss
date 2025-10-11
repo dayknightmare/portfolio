@@ -1,0 +1,94 @@
+@media (max-width: 1280px) {
+  .contact {
+    .content {
+      h2 {
+        font-size: 52px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    .content {
+      h2 {
+        font-size: 42px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .contact {
+    flex-direction: column !important;
+
+    .title {
+      position: relative;
+      width: 100% !important;
+      height: 5rem !important;
+      writing-mode: horizontal-tb !important;
+      transform: rotate(0deg) !important;
+      top: 0 !important;
+
+      h1 {
+        margin: 0 !important;
+        margin-top: 1rem !important;
+        font-size: 6rem !important;
+      }
+    }
+
+    .content {
+      margin-left: 0 !important;
+      width: 100% !important;
+      height: 100vh !important;
+      padding: 2rem;
+      padding-top: 7rem !important;
+      justify-content: center !important;
+      align-items: center !important;
+
+      h2 {
+        font-size: 38px !important;
+        text-align: center !important;
+        letter-spacing: -3 !important;
+      }
+
+      .talks {
+        .talk {
+          font-size: 22px !important;
+
+          svg {
+            width: 3rem !important;
+            height: 3rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    .content {
+      h2 {
+        font-size: 34px !important;
+        text-align: center !important;
+        letter-spacing: -1 !important;
+      }
+
+      .talks {
+        margin-top: 1rem !important;
+        gap: 2.5rem !important;
+
+        .talk {
+          font-size: 20px !important;
+          gap: 1rem !important;
+
+          svg {
+            width: 2.25rem !important;
+            height: 2.25rem !important;
+          }
+        }
+      }
+    }
+  }
+}

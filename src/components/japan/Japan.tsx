@@ -13,6 +13,7 @@ type Props = {
 };
 
 const SvgAnimationComponent = ({ color, extraDelay = 0 }: Props) => {
+
   const draw: Variants = {
     hidden: { pathLength: 0, opacity: 0, fill: 'none' },
     visible: (i: number) => {
@@ -47,8 +48,8 @@ const SvgAnimationComponent = ({ color, extraDelay = 0 }: Props) => {
 
   return <motion.svg
     initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true, margin: '-500px' }}
+    whileInView={'visible'}
+    viewport={{ once: true, margin: '-500px 0px 0px 0px' }}
     width="1672"
     height="1083"
     viewBox="0 0 1672 1083"

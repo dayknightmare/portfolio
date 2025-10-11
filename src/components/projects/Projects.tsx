@@ -3,13 +3,13 @@
 import './Projects.scss';
 
 import { M_PLUS_1, Mohave } from 'next/font/google';
-import { Variants, motion } from 'motion/react';
+import { Variants, motion, useInView } from 'motion/react';
+import { useRef, useState } from 'react';
 
 import { Modal } from './Modal';
 import { ProjectItem } from './ProjectItem';
 import { Star } from './Star';
 import { primaryColor } from '@/utils';
-import { useState } from 'react';
 
 const mohave = Mohave({ subsets: ['latin'], weight: '600' });
 const mplus1 = M_PLUS_1({ subsets: ['latin'], weight: '600' });
@@ -52,7 +52,7 @@ export const Projects = () => {
         className="projects"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: '-500px' }}
+        viewport={{ once: true, margin: '-400px 0px 0px 0px' }}
       >
         <div className="star plus"><Star color={primaryColor}/></div>
         <div className="star"><Star color={'#000'}/></div>

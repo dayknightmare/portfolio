@@ -1,9 +1,18 @@
 @use '../../app/theme' as *;
+@use './Contact.responsive';
 
 .red-container {
   position: absolute;
   height: 100vh;
-  top: 0;
+  bottom: 0 !important;
+
+  svg {
+    height: 100vh;
+    width: 100vw;
+    left: 50%;
+    position: absolute;
+    bottom: 0 !important;
+  }
 }
 
 .contact {
@@ -32,7 +41,7 @@
       margin-top: 100px;
       color: #101010;
       white-space: nowrap;
-      font-size: 8.5rem !important;
+      font-size: 8.5rem;
       line-height: 8rem;
       text-align: center;
       letter-spacing: -5;
