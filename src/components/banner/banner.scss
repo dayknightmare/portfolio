@@ -1,34 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@use '../../app/theme' as *;
 
-div.banner {
-    background-image: url('/banner.svg');
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: calc(100vh + 5rem);
-    position: relative;
+.banner {
+  width: 100vw;
+  height: 100vh;
+
+  .interpolate {
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-left: 4rem;
 
-    h1 {
-        font-size: 4rem;
-        font-weight: lighter;
-        line-height: 2;
+    p {
+      font-size: 200px;
+      font-weight: bold;
+      letter-spacing: -8px;
 
-        .red-text {
-            font-weight: 600;
-        }
-    }
-
-    .hollow {
+      &.japanese {
+        margin-top: -3rem;
+        font-size: 180px;
         position: absolute;
-        right: 1rem;
-        bottom: 6.5rem;
-
-        span {
-            font-family: "Gloria Hallelujah", cursive !important;
-            font-size: 1.5rem;
-        }
+        color: $primary-color;
+        white-space: nowrap;
+      }
     }
+  }
+
+  p.sub {
+    color: $secondary-body-color;
+    margin-top: -4rem;
+    font-size: 32px;
+    letter-spacing: 8px;
+  }
+
+  .badges {
+    position: absolute;
+    left: 3vw;
+    bottom: 6vw;
+
+    .badge {
+      font-size: 48;
+      color: #000;
+      white-space: nowrap;
+      z-index: 1;
+      padding: .5rem 1rem;
+      border: 5px solid #000;
+      border-radius: 1rem;
+
+      &:nth-child(2) {
+        color: $primary-color;
+        margin-left: 4px;
+        margin-top: 5px;
+        z-index: 0;
+        border-color: $primary-color;
+      }
+    }
+  }
 }

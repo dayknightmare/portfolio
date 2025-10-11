@@ -1,0 +1,80 @@
+@use '../../app/theme' as *;
+
+.about {
+  width: 100vw;
+  min-height: 100vh;
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border-bottom: 3px solid #000;
+  border-top: 3px solid #000;
+  position: relative;
+
+  .neo {
+    border-left: 3px solid #000;
+    width: 10rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    span {
+      position: absolute;
+      width: min-content;
+      font-size: 70px;
+      color: $primary-color;
+      z-index: 2;
+
+      &:nth-child(2) {
+        color: black;
+        margin-top: 10px;
+        margin-left: 10px;
+        z-index: 1;
+      }
+    }
+  }
+
+  .container {
+    position: relative;
+
+    svg {
+      position: absolute;
+      z-index: -1;
+    }
+
+    .title-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+
+      .main-title {
+        font-size: 140px;
+      }
+      .sub-title {
+        font-size: 64px;
+        color: $primary-color;
+      }
+    }
+
+    .body-container {
+      margin-top: 6rem;
+
+      p {
+        font-size: 32px;
+        line-height: 1.75;
+      }
+    }
+  }
+
+  .for-health {
+    position: absolute;
+    right: 12rem;
+    bottom: 2rem;
+    font-size: 28px;
+  }
+}

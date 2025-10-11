@@ -1,48 +1,60 @@
-"use client"
+'use client';
 
-import  { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import './cursor.scss'
+import './Cursor.scss';
 
-export default function Cursor() {
+import  { useEffect, useState } from 'react';
+
+import { motion } from 'framer-motion';
+
+export const Cursor = () => {
   const [pos, setPos] = useState({ x: 0, y: 0 });
-  const [size, setSize] = useState(16);
+  const [size, setSize] = useState(20);
 
   const handleMove = (e: MouseEvent) => {
     if (
       (
-        (e.target as HTMLElement).classList.contains("cursor-pointer") ||
-        (e.target as HTMLElement).parentElement?.classList.contains("cursor-pointer")
-      ) && size === 16
+        (e.target as HTMLElement).classList.contains('cursor-pointer') ||
+        (e.target as HTMLElement).parentElement?.classList.contains('cursor-pointer')
+      ) && size === 20
     ) {
-        setSize(32)
-    } else if (!(e.target as HTMLElement).classList.contains("cursor-pointer")) {
-        setSize(16)
+      document.querySelector('.custom-cursor')?.classList.add('hovered');
+      setSize(40);
+    } else if (!(e.target as HTMLElement).classList.contains('cursor-pointer')) {
+      document.querySelector('.custom-cursor')?.classList.remove('hovered');
+      setSize(20);
     }
 
     setPos({ x: e.clientX, y: e.clientY });
   };
 
   useEffect(() => {
-    window.addEventListener("mousemove", handleMove);
+    window.addEventListener('mousemove', handleMove);
 
     return () => {
-      window.removeEventListener("mousemove", handleMove);
+      window.removeEventListener('mousemove', handleMove);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-return (
+  return (
     <motion.div
-        className="fixed bg-white rounded-full pointer-events-none z-50"
-        style={{ width: size, height: size }}
-        initial={false}
-        animate={{
-            x: pos.x - size / 2,
-            y: pos.y - size / 2,
-            opacity: size === 16 ? 0.5 : 1,
-            width: size,
-            height: size,
-        }}
+      className="custom-cursor fixed border-black border-2 rounded-full pointer-events-none z-50"
+      style={{
+        width: size,
+        height: size,
+      }}
+      transition={{
+        type: 'keyframes',
+        stiffness: 200,
+        damping: 20,
+      }}
+      animate={{
+        x: pos.x - size / 2,
+        y: pos.y - size / 2,
+        width: size,
+        height: size,
+        rotate: [0, 360]
+      }}
     />
-);
-}
+  );
+};

@@ -1,6 +1,11 @@
 @use '../../app/theme.scss' as *;
 
 ::selection {
-    color: white;
+    color: black;
     background-color: $primary-color;
+}
+
+.custom-cursor {
+  width: 0px;
+  overflow: hidden;
 }

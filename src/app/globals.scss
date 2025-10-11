@@ -1,17 +1,35 @@
-@use "./theme.scss" as *;
 @use "tailwindcss";
+@use "./theme" as *;
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-
-* {
-  font-family: 'Manrope', sans-serif;
+.tt {
+  position: relative;
 }
 
-body {
-  background-color: $background-color;
-  color: white;
+.tt[title]::after {
+  content: '';
+  transition: .3s ease-in-out;
+  transition-delay: 75ms;
+  opacity: 0;
+  position: absolute;
+  top: -5%;
+  left: 0;
+  background: #000;
+  border-radius: .75rem;
+  text-align: center;
+  font-size: 1rem;
+  transform: translate(-50%, -100%);
+  color: #e6ebed;
+  font-weight: bolder;
+  margin-left: 50%;
+  width: 0;
+  height: 0;
+  transition: 0.1s ease-in;
 }
 
-.red-text {
-  color: $primary-color;
+.tt[title]:hover::after {
+  content: attr(title);
+  opacity: 1;
+  width: max-content;
+  height: auto;
+  padding: .25rem .75rem;
 }

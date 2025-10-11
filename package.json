@@ -1,29 +1,33 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
+  "name": "backend-portfolio",
+  "version": "v-2025.2",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "next build --turbopack",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint . --fix"
   },
   "dependencies": {
-    "motion": "^12.5.0",
-    "next": "15.2.2",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "motion": "^12.23.22",
+    "next": "15.5.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
+    "@stylistic/eslint-plugin": "^5.4.0",
+    "@tailwindcss/postcss": "^4.1.14",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.21",
     "eslint": "^9",
-    "eslint-config-next": "15.2.2",
-    "sass": "^1.85.1",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "eslint-config-next": "^15.5.4",
+    "prettier": "^3.6.2",
+    "sass": "^1.93.2",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5",
+    "typescript-eslint": "^8.45.0"
   }
 }

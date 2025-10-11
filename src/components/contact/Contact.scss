@@ -1,0 +1,112 @@
+@use '../../app/theme' as *;
+
+.red-container {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+}
+
+.contact {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  .title {
+    width: 8rem;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-color;
+    transform: rotate(180deg);
+    overflow: hidden;
+
+    h1 {
+      user-select: none;
+      margin-top: 100px;
+      color: #101010;
+      white-space: nowrap;
+      font-size: 8.5rem !important;
+      line-height: 8rem;
+      text-align: center;
+      letter-spacing: -5;
+    }
+  }
+
+  .content {
+    width: 100%;
+    margin-left: 15rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+
+    h2 {
+      font-size: 72px;
+      color: #fff;
+      letter-spacing: -5;
+
+      span {
+        background-color: $primary-color;
+      }
+    }
+
+    img.bike {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 25rem;
+      opacity: 0.6;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .talks {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      span {
+        transition: all 0.3s ease-in-out;
+        letter-spacing: -1;
+        filter: drop-shadow(0px 0px 0px $primary-color);
+      }
+
+      .talk {
+        font-size: 28px;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        transition: all 0.3s ease-in-out;
+        width: min-content;
+
+        svg {
+          width: 4.5rem;
+          height: 4.5rem;
+          transition: all 0.3s ease-in-out;
+          filter: drop-shadow(0px 0px 0px $primary-color);
+        }
+
+        &:hover {
+          transform: skewX(-5deg) scale(1.05);
+
+          span {
+            letter-spacing: 1;
+          }
+
+          svg {
+            filter: drop-shadow(10px 10px 0px $primary-color);
+          }
+        }
+      }
+    }
+  }
+}

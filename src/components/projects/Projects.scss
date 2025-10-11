@@ -1,0 +1,129 @@
+@use '../../app/theme' as *;
+
+.projects {
+  width: 100vw;
+  min-height: 100vh;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  position: relative;
+
+  .star {
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+
+    &.plus {
+      right: calc(5rem - 5px);
+      margin-top: 5px;
+    }
+  }
+
+  .title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5rem;
+
+    .main-title {
+      font-size: 140px;
+    }
+
+    .sub-title {
+      font-size: 64px;
+      color: $primary-color;
+    }
+  }
+
+  .body-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .project-item {
+      background-color: #EDEDED;
+      width: 100%;
+      height: 20rem;
+      border-radius: 28px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+
+      .image-container {
+        height: 100%;
+        overflow: hidden;
+        aspect-ratio: 16 / 9;
+        background-size: cover;
+        background-position: center;
+        filter: grayscale(100%) saturate(110%);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          filter: grayscale(0%) saturate(100%);
+          transform: scale(1.05);
+        }
+      }
+
+      .content {
+        padding: 1rem;
+        padding-left: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        height: 20rem;
+        width: 100%;
+
+        .project-title {
+          font-size: 48px;
+          letter-spacing: -4;
+        }
+
+        .project-description {
+          font-size: 22px;
+          color: $secondary-body-color;
+          line-height: 1.75;
+        }
+
+        .header {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 2rem;
+          gap: 2rem;
+
+          .icons {
+            display: flex;
+            gap: 1rem;
+
+            img {
+              width: 2.5rem;
+              height: 2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.image-modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(7, 11, 18, 0.767);
+  position: fixed;
+  z-index: 500;
+  left: 0;
+  top: 0;
+
+  .contents {
+    transform: translateY(-50%);
+    top: 50%;
+  }
+
+  .modal-hero {
+    width: 90%;
+    height: 90%;
+  }
+}
