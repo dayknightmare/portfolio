@@ -109,7 +109,7 @@
   }
 }
 
-.image-modal {
+.modal-image {
   width: 100vw;
   height: 100vh;
   background-color: rgba(7, 11, 18, 0.767);
@@ -117,18 +117,10 @@
   z-index: 500;
   left: 0;
   top: 0;
-  opacity: 0;
-  transition: opacity 3s ease-in-out;
   justify-content: center;
   align-items: center;
 
-  .contents {
-    transform: translateY(-50%);
-    top: 50%;
-  }
-
-  .modal-hero {
-    width: 90%;
-    height: 90%;
+  .modal-content {
+    height: 100vh;
   }
 }
