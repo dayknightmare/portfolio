@@ -1,4 +1,5 @@
 @use '../../app/theme.scss' as *;
+@use './Cursor.responsive';
 
 ::selection {
     color: black;

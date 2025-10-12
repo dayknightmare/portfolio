@@ -1,0 +1,31 @@
+@media (max-width: 1024px) {
+  .japan-svg-pc {
+    display: none !important;
+  }
+
+  .japan-svg-mobile {
+    display: block !important;
+  }
+
+  .japan {
+    height: 60vh !important;
+
+    svg {
+      width: 100% !important;
+      height: 100% !important;
+
+      &:nth-child(2) {
+        margin-left: 8px !important;
+        margin-top: 8px !important;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .japan {
+    height: 45vh !important;
+  }
+}

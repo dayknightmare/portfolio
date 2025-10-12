@@ -3,13 +3,13 @@
 import './Projects.scss';
 
 import { M_PLUS_1, Mohave } from 'next/font/google';
-import { Variants, motion, useInView } from 'motion/react';
-import { useRef, useState } from 'react';
+import { Variants, motion } from 'motion/react';
 
 import { Modal } from './Modal';
 import { ProjectItem } from './ProjectItem';
 import { Star } from './Star';
 import { primaryColor } from '@/utils';
+import { useState } from 'react';
 
 const mohave = Mohave({ subsets: ['latin'], weight: '600' });
 const mplus1 = M_PLUS_1({ subsets: ['latin'], weight: '600' });
@@ -184,8 +184,8 @@ export const Projects = () => {
             ]}
             imageUrl='/images/vupyapp/a3.png'
             images={[
-              '/images/vupyapp/a1.jpeg',
-              '/images/vupyapp/a2.jpeg',
+              '/images/vupyapp/a1.png',
+              '/images/vupyapp/a2.png',
               '/images/vupyapp/a3.png',
               '/images/vupyapp/a4.png',
             ]}

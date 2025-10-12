@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <img src="./public/images/portfolio/logo.png" height="100">
+</p>
 
-## Getting Started
+<samp><h6 align="center">#devlife, #project, #portfolio</h6></samp>
+<samp><h1 align="center">Portfolio</h1></samp>
 
-First, run the development server:
+<p align="center">
+  <img src="https://img.shields.io/badge/nextjs-22272E?&style=for-the-badge&logo=next.js&logoColor=f9f9f9">
+  <img src="https://img.shields.io/badge/node-22272E?style=for-the-badge&logo=node.js&logoColor=00CBB2">
+</p>
 
-```bash
+
+This portfolio project highlights my work as a backend developer, featuring examples of clean architecture, API development, authentication flows, and data processing pipelines. Built with modern technologies to demonstrate real-world backend design patterns and scalability practices.
+
+<br />
+
+## Live portfolio
+
+>
+> ### https://miguelcolombo.dev
+>
+<br>
+
+## Photos
+
+<kbd><img src="./public/images/portfolio/a1.png" width="500"></kbd>
+<br />
+<br />
+<kbd><img src="./public/images/portfolio/a2.png" width="500"></kdb>
+<br />
+<br />
+<kbd><img src="./public/images/portfolio/a3.png" width="500"></kdb>
+<br />
+<br />
+<kbd><img src="./public/images/portfolio/a4.png" width="500"></kdb>
+<br />
+
+## Run
+
+Clone repository
+
+```
+git clone https://github.com/dayknightmare/portfolio.git
+
+OR
+
+git clone git@github.com:dayknightmare/portfolio.git
+```
+Install dependencies
+
+```
+npm i
+```
+Run dev mode
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [Localhost:3000](http://localhost:3000) on your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contribute
 
-## Learn More
+Want to be part of this project?
 
-To learn more about Next.js, take a look at the following resources:
+Whether it’s improving documentation, fixing bugs, or adding new features — your help is always welcome.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Just fork the repo, make your changes, and open a pull request. Let’s build something great together!

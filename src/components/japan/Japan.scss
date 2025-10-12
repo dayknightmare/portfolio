@@ -1,3 +1,5 @@
+@use './Japan.responsive';
+
 .japan {
     display: flex;
     justify-content: center;
@@ -8,17 +10,21 @@
 
     svg {
         position: absolute;
-        width: 90% !important;
-        height: 90% !important;
+        width: 95% !important;
+        height: 95% !important;
 
         &:nth-child(1) {
             z-index: 2;
         }
 
-        &:nth-child(2) {
+        &:nth-child(3) {
             margin-left: 10px;
             margin-top: 10px;
             z-index: 1;
         }
     }
+}
+
+.japan-svg-mobile {
+  display: none;
 }

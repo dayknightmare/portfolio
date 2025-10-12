@@ -2,6 +2,11 @@
 @use "./theme" as *;
 @use './responsive';
 
+
+body, html, #root {
+  overflow-x: hidden !important;
+}
+
 .tt {
   position: relative;
 }

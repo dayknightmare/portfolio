@@ -2,6 +2,8 @@
 
 import { MouseEvent, useEffect, useState } from 'react';
 
+import { motion } from 'motion/react';
+
 type ImageModalProps = {
   imgs: string[];
   active: boolean;
@@ -35,7 +37,15 @@ export const Modal = ({ imgs, active, onClose }: ImageModalProps) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [active]);
 
-  return <div className={`image-modal has_close justify-center items-center ${active ? 'flex' : 'hidden'}`} onClick={(e) => closeModal(e)}>
+  return <motion.div
+    className="image-modal has_close"
+    onClick={(e) => closeModal(e)}
+    animate={{
+      opacity: active ? 1 : 0,
+      display: active ? 'flex' : 'none',
+    }}
+    transition={{ duration: .3 }}
+  >
     <div
       className="
         rounded-md
@@ -61,5 +71,5 @@ export const Modal = ({ imgs, active, onClose }: ImageModalProps) => {
           <img className="max-w-full max-h-full h-auto w-auto rounded-lg" src={imgs[index]} alt="Modal image" />
       }
     </div>
-  </div>;
+  </motion.div>;
 };
