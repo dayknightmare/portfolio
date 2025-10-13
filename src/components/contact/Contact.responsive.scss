@@ -1,24 +1,61 @@
 @media (max-width: 1280px) {
   .contact {
     .content {
+      gap: 1rem !important;
+
       h2 {
         font-size: 52px !important;
+      }
+
+      p.contact-description {
+        font-size: 24px !important;
+      }
+
+      .talks {
+        display: flex !important;
+        flex-direction: column !important;
+
+        .talk {
+          margin-bottom: 1rem !important;
+        }
       }
     }
   }
 }
 
 @media (max-width: 1024px) {
+  img.bike {
+    width: 70vh !important;
+    right: -17% !important;
+  }
+
   .contact {
     .content {
       h2 {
         font-size: 42px !important;
+      }
+
+      .talks {
+        .talk {
+          font-size: 22px !important;
+
+          svg {
+            width: 3.5rem !important;
+            height: 3.5rem !important;
+            padding: .625rem !important;
+          }
+        }
       }
     }
   }
 }
 
 @media (max-width: 767px) {
+  img.bike {
+    width: 60vh !important;
+    right: -17% !important;
+  }
+
   .contact {
     flex-direction: column !important;
 
@@ -42,13 +79,15 @@
       width: 100% !important;
       height: 100vh !important;
       padding: 2rem;
-      justify-content: center !important;
-      align-items: center !important;
 
       h2 {
         font-size: 38px !important;
         text-align: center !important;
         letter-spacing: -3 !important;
+      }
+
+      p.contact-description {
+        font-size: 20px !important;
       }
 
       .talks {
@@ -58,6 +97,7 @@
           svg {
             width: 3rem !important;
             height: 3rem !important;
+            padding: .5rem !important;
           }
         }
       }
@@ -66,8 +106,17 @@
 }
 
 @media (max-width: 480px) {
+  img.bike {
+    width: 50vh !important;
+    right: -17% !important;
+  }
+
   .contact {
     .content {
+      p.contact-description {
+        font-size: 19px !important;
+      }
+
       h2 {
         font-size: 34px !important;
         text-align: center !important;
@@ -76,15 +125,15 @@
 
       .talks {
         margin-top: 1rem !important;
-        gap: 2.5rem !important;
 
         .talk {
-          font-size: 20px !important;
+          font-size: 18px !important;
           gap: 1rem !important;
 
           svg {
             width: 2.25rem !important;
             height: 2.25rem !important;
+            padding: .4rem !important;
           }
         }
       }

@@ -8,20 +8,26 @@ import { Red } from '../red';
 import { primaryColor } from '@/utils';
 
 const mohave = Mohave({ subsets: ['latin'], weight: '700' });
+const mohaveBody = Mohave({ subsets: ['latin'], weight: '300' });
 const mplus1 = M_PLUS_1({ subsets: ['latin'], weight: '600' });
 
 export const Contact = () => {
   return (
-    <div className='relative overflow-hidden' style={{ backgroundColor: primaryColor }}>
+    <div className='relative overflow-hidden contact-base' style={{ backgroundColor: primaryColor }}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/images/pilot.png" alt="Bike" className='bike' />
       <Red/>
       <div className="contact">
         <div className='title'>
           <h1 className={mohave.className}>CONTACT • CONTACT • CONTACT • CONTACT • CONTACT • CONTACT • CONTACT • CONTACT • CONTACT</h1>
         </div>
         <div className='content'>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/pilot.png" alt="Bike" className='bike' />
-          <h2 className={mplus1.className}>Let&apos;s <span>talk</span> for a something special!</h2>
+          <header>
+            <h2 className={mplus1.className}>Let&apos;s <span>talk</span> for a something special!</h2>
+            <p className={mohaveBody.className + ' contact-description'}>
+              I enjoy connecting with other developers, designers, and tech enthusiasts — don’t hesitate to drop me a message
+            </p>
+          </header>
           <br />
           <br />
           <br />
