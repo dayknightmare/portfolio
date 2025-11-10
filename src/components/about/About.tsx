@@ -25,7 +25,7 @@ export const About = () => {
         <div className='body-container'>
           <p className={mohaveBody.className}>
             Hi, I&apos;m Miguel — a software engineer focused on building reliable and scalable backend systems.
-            Over the past {yearsOfExperience}+ years, I&apos;ve worked with microservices, APIs, gateways, queues, and cloud infrastructure, turning complex ideas into practical, maintainable solutions.
+            Over the past {yearsOfExperience}+ years, I&apos;ve worked with microservices, APIs, gateways, queues, and cloud infrastructure, turning complex ideas into practical and maintainable solutions.
           </p>
           <br />
           <br />
