@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/images/portfolio/logo.png" height="100">
+  <img src="./public/logo.png" height="100">
 </p>
 
 <samp><h6 align="center">#devlife, #project, #portfolio</h6></samp>
@@ -20,21 +20,6 @@ This portfolio project highlights my work as a backend developer, featuring exam
 >
 > ### https://miguelcolombo.dev
 >
-<br>
-
-## Photos
-
-<kbd><img src="./public/images/portfolio/a1.png" width="500"></kbd>
-<br />
-<br />
-<kbd><img src="./public/images/portfolio/a2.png" width="500"></kdb>
-<br />
-<br />
-<kbd><img src="./public/images/portfolio/a3.png" width="500"></kdb>
-<br />
-<br />
-<kbd><img src="./public/images/portfolio/a4.png" width="500"></kdb>
-<br />
 
 ## Run
 
@@ -60,7 +45,6 @@ npm run dev
 
 Open [Localhost:3000](http://localhost:3000) on your browser
 
-<br>
 
 ## Contribute
 
