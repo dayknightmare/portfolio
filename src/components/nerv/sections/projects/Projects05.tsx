@@ -27,7 +27,14 @@ const REPO_URLS = [
   'https://apps.apple.com/br/app/1doc-atendimento/id1494746128',
 ]
 
-const REPO_LANGS = ['Go | Java', 'Go | Java', 'Python | Apache Druid', 'Python', 'Python | Go', 'Flutter | Dart']
+const REPO_LANGS = [
+  'Go | Java',
+  'Go | Java',
+  'Python | Apache Druid',
+  'Python',
+  'Python | Go',
+  'Flutter | Dart',
+]
 
 export function Projects05({ lang, setRef, t, doorP }: Projects05Props) {
   const c = COPY[lang]
@@ -139,9 +146,7 @@ export function Projects05({ lang, setRef, t, doorP }: Projects05Props) {
             >
               <S.CardHead>
                 <S.CardUnit>{r.unit}</S.CardUnit>
-                <S.CardStatus status={r.status}>
-                  {r.status}
-                </S.CardStatus>
+                <S.CardStatus status={r.status}>{r.status}</S.CardStatus>
               </S.CardHead>
               <S.CardName>{r.name}</S.CardName>
               <S.CardDesc>{r.desc}</S.CardDesc>

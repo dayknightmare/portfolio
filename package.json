@@ -1,7 +1,13 @@
 {
-  "name": "backoffice-front",
-  "version": "0.1.0",
+  "name": "backend-portfolio",
+  "version": "v-2026",
   "private": true,
+  "author": {
+    "email": "miguelcolombo3@gmail.com",
+    "name": "Miguel Colombo",
+    "url": "https://miguelcolombo.dev"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

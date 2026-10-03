@@ -261,24 +261,24 @@ export const CardUnit = styled.span`
     letter-spacing: 0.18em;
 `
 
-export const CardStatus = styled.span<{status: string}>`
-    ${props => `
+export const CardStatus = styled.span<{ status: string }>`
+    ${(props) => `
         font-size: 9.5px;
         letter-spacing: 0.2em;
         padding: 4px 8px;
         color: ${
-            props.status === 'ACTIVE' ? 
-                props.theme.colors.green :
-                props.status === 'STABLE' ?
-                    props.theme.colors.amber :
-                    props.theme.colors.danger    
+          props.status === 'ACTIVE'
+            ? props.theme.colors.green
+            : props.status === 'STABLE'
+              ? props.theme.colors.amber
+              : props.theme.colors.danger
         };
         border: 1px solid ${
-            props.status === 'ACTIVE' ?
-                props.theme.colors.green :
-                props.status === 'STABLE' ?
-                    props.theme.colors.amber :
-                    props.theme.colors.danger
+          props.status === 'ACTIVE'
+            ? props.theme.colors.green
+            : props.status === 'STABLE'
+              ? props.theme.colors.amber
+              : props.theme.colors.danger
         };
     `}
 `
