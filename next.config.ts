@@ -1,11 +1,9 @@
-import type { NextConfig } from 'next';
-import path from 'path';
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  turbopack: {
-    root: path.join(__dirname, './'), // Adjust this path to your repository's root
+  compiler: {
+    styledComponents: true,
   },
-};
+}
 
-export default nextConfig;
+export default nextConfig

@@ -1,33 +1,41 @@
 {
   "name": "backend-portfolio",
-  "version": "v-2025.2",
+  "version": "v-2026",
   "private": true,
+  "author": {
+    "email": "miguelcolombo3@gmail.com",
+    "name": "Miguel Colombo",
+    "url": "https://miguelcolombo.dev"
+  },
+  "license": "MIT",
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
-    "lint": "eslint . --fix"
+    "lint": "biome check .",
+    "lint:fix": "biome check . --fix"
   },
   "dependencies": {
-    "motion": "^12.23.22",
-    "next": "^15.5.9",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "next": "16.3.3",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@stylistic/eslint-plugin": "^5.4.0",
-    "@tailwindcss/postcss": "^4.1.14",
+    "@biomejs/biome": "^2.5.14",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "autoprefixer": "^10.4.21",
-    "eslint": "^9",
-    "eslint-config-next": "^15.5.4",
-    "prettier": "^3.6.2",
-    "sass": "^1.93.2",
-    "tailwindcss": "^4.1.14",
-    "typescript": "^5",
-    "typescript-eslint": "^8.45.0"
+    "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "biome check --fix"
+    ],
+    "*.json": [
+      "biome format --write"
+    ]
   }
 }
