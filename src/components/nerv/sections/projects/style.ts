@@ -95,6 +95,13 @@ export const Countdown = styled.div`
     font-size: min(11vw, 116px);
     line-height: 0.9;
     letter-spacing: 0.06em;
+    position: relative;
+
+    span {
+      font-size: min(4vw, 52px);
+      position: absolute;
+      bottom: 10px;
+    }
 `
 
 export const PowerBlock = styled.div`
