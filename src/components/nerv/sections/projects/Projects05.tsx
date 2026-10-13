@@ -1,11 +1,11 @@
 import { COPY, type Lang, repoUnitLabel } from '@/components/copy'
 import { SectionHeading } from '@/components/nerv/sections'
 import * as S from './style'
+import {useEffect, useState} from "react";
 
 type Projects05Props = {
   lang: Lang
   setRef: (el: HTMLElement | null) => void
-  t: number
   doorP: number
 }
 
@@ -36,11 +36,26 @@ const REPO_LANGS = [
   'Flutter | Dart',
 ]
 
-export function Projects05({ lang, setRef, t, doorP }: Projects05Props) {
+const useTimer = (durationInMinutes: number) => {
+  const [time, setTime] = useState(durationInMinutes * 60 * 1000)
+
+  useEffect(() => {
+    const tick = setInterval(() => setTime((s) => s - 127), 127)
+    return () => {
+      clearInterval(tick)
+    }
+  }, [])
+
+  return { time }
+}
+
+export function Projects05({ lang, setRef, doorP }: Projects05Props) {
+  const {time} = useTimer(5)
+
   const c = COPY[lang]
 
   const doorOpen = Math.max(0, Math.min(1, (doorP - 0.5) / 0.42))
-  const timeLeft = Math.max(0, 300 - t)
+  const timeLeft = Math.max(0, Math.floor(time / 1000))
   const doorExpired = timeLeft === 0
   const doorUrgent = timeLeft < 270
   const dColor = doorUrgent ? '#ff2020' : '#e8c000'
@@ -48,7 +63,13 @@ export function Projects05({ lang, setRef, t, doorP }: Projects05Props) {
 
   const doorShift = `${(doorOpen * 102).toFixed(2)}%`
   const chromeOp = doorExpired ? '0.1' : String(1 - doorOpen)
-  const countdown = `${Math.floor(timeLeft / 60)}:${String(timeLeft % 60).padStart(2, '0')}`
+
+  const minutes = Math.floor(timeLeft / 60)
+  const seconds = String(timeLeft % 60).padStart(2, '0')
+  const milisecs = String(Math.floor(time % 1000)).padStart(3, '0').slice(0, 3)
+
+  const countdown = `${minutes}:${seconds}`
+
   const dGlow = doorUrgent ? 'rgba(255,32,32,0.5)' : 'rgba(232,192,0,0.35)'
   const dLine = doorUrgent ? 'rgba(255,32,32,0.3)' : 'rgba(232,192,0,0.28)'
   const dBlink = doorExpired ? 'nvBlink 0.6s infinite' : 'none'
@@ -81,7 +102,7 @@ export function Projects05({ lang, setRef, t, doorP }: Projects05Props) {
               <S.Countdown
                 style={{ color: dColor, textShadow: `0 0 26px ${dGlow}`, animation: dBlink }}
               >
-                {countdown}
+                  {countdown} <span>.{milisecs}</span>
               </S.Countdown>
               <S.PowerBlock style={{ opacity: chromeOp }}>
                 <S.PowerRowBordered style={{ border: `2px solid ${dColor}` }}>

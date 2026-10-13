@@ -113,7 +113,6 @@ export default function Nerv() {
         <Stack04 lang={lang} setRef={(el) => (sectionRefs.current[3] = el)} />
         <Projects05
           lang={lang}
-          t={t}
           doorP={doorP}
           setRef={(el) => (sectionRefs.current[4] = el)}
         />

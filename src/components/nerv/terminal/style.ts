@@ -11,6 +11,14 @@ export const Console = styled.div`
     background: ${(p) => p.theme.colors.bg.console};
     border-top: 1px solid ${(p) => p.theme.colors.border.subtle};
     font-size: 12px;
+
+    @media (max-width: 768px) {
+      right: 0;
+    }
+
+    @media (max-width: 512px) {
+      left: 0;
+    }
 `
 
 export const Toggle = styled.div`

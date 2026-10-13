@@ -26,7 +26,7 @@ export function Contact06({ lang, setRef }: Contact06Props) {
       value: 'linkedin.com/in/miguelvcolombo',
       url: 'https://www.linkedin.com/in/miguelvcolombo',
     },
-    { label: c.channelLabels[3], value: c.resumeValue, url: '#' },
+    // { label: c.channelLabels[3], value: c.resumeValue, url: '#' },
   ]
 
   return (
